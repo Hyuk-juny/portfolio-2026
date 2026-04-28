@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로그인</title>
+</head>
+<link rel="stylesheet" href="../css/login.css">
+<body>
+  <!--헤더 영역--> 
+  <header>
+    <div id="logo"><a href="../html/dodam-main.html"><img src="../img/main/logo.png" alt="브랜드로고"></a></div>
+    <div class="nav">
+      <ul>
+        <li><a href="../html/sub01.html">서비스 및 주요기능 소개</a></li>
+        <li><a href="../html/sub02.html">보호자 대시보드</a></li>
+        <li><a href="../html/login.html">로그인</a> / <a href="../html/singup.html">회원가입</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!--로그인 타이틀-->
+  <div class="wrap">
+    <div class="title">
+      <h2>로그인</h2>
+      <p>보호자 계정으로 접속해주세요.</p>
+    </div>
+
+  <!--정보 입력창-->
+    <div class="id-pw">
+      <h2>이메일</h2>
+      <input type="text" placeholder="이메일 주소를 입력하세요"><br>
+      <h2>비밀번호</h2>
+      <input type="password" placeholder="비밀번호를 입력하세요"><br>
+    </div>
+
+  <!--로그인 버튼, 상태유지, 찾기-->
+    <div class="login">
+      <input type="submit" value="로그인">
+      <p>또는</p>
+    </div>
+    <div class="textbox1">
+      <div class="check">
+        <input type="checkbox" id="a">
+        <label for="a">로그인 상태 유지</label>
+      </div>
+      <div class="find">
+        <ul>
+          <li>아이디 찾기</li>
+          <li>│</li>
+          <li>비밀번호 찾기</li>
+        </ul>
+      </div>
+    </div>
+
+  <!--카카오톡, 네이버 로그인 버튼-->
+    <div class="butbox">
+        <button><a href="#" target="_blank"><img src="../img/login/kakaoicon.png" alt="카카오톡 아이콘">카카오톡 로그인</a></button>
+        <button><a href="#" target="_blank"><img src="../img/login/navericon.png" alt="네이버 아이콘">네이버 로그인</a></button>
+    </div>
+    
+  <!--회원가입 이동 버튼-->
+    <div class="textbox2">
+      <p>아직 계정이 없나요?</p>
+      <p><span><a href="../html/singup.html">회원가입</a></span></p>
+    </div>
+
+  <!--푸터 영역-->
+    <div class="textbox3">
+      <ul>
+        <li>개인정보 처리방침</li>
+        <li>이용약관</li>
+        <li>고객센터</li>
+      </ul>
+    </div>
+    <div class="bot">
+      도담은 보호자와 가족의 개인정보를 안전하게 보호합니다.
+    </div>
+  </div>
+</body>
+</html>

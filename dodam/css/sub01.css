@@ -1,0 +1,303 @@
+@charset "UTF-8";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #323232;
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+
+/*헤더 영역*/
+header {
+  width: 1170px;
+  height: 150px;
+  margin: 0 auto;
+}
+#logo>a>img {
+  width: 150px;
+  height: 150px;
+  float: left;
+}
+.nav>ul {
+  width: 600px;
+  height: 150px;
+  float: right;
+}
+.nav>ul>li {
+  padding: 0 30px;
+  line-height: 150px;
+  float: left;
+}
+header>.nav>ul>li>a:hover {
+  font-weight: bold;
+}
+/*섹션 영역*/
+
+/*메인이미지, 메인 이미지위 텍스트, 버튼*/
+.main {
+  width: 1920px;
+  height: 1080px;
+  background-image: url(../img/sub01/mainhero.png);
+  background-size: cover;
+}
+.main>.textbox {
+  height: 1080px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+}
+.main>.textbox>p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.main>.textbox>h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+.main>.textbox>p:nth-child(4) {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.main>.textbox>a {
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 100px;
+  background-color: #f40;
+  color: #fff;
+  margin-top: 50px;
+}
+
+/*보호, 케어 이미지 3개와 설명 텍스트*/
+.wrap1 {
+  padding: 100px 0;
+  background-color: #323232;
+  color: #fff;
+}
+.wrap1>.container1 {
+  width: 1170px;
+  margin: 0 auto;
+  color: #979797;
+}
+.wrap1>.container1>.imgbox {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.wrap1>.container1>.imgbox:nth-child(2) {
+  margin: 50px 0;
+}
+.wrap1>.container1>.imgbox>img {
+  width: 600px;
+  height: 300px;
+  border-radius: 30px;
+}
+.wrap1>.container1>.imgbox>.textbox>h1 {
+  margin-bottom: 80px;
+  font-size: 28px;
+  color: #fff;
+}
+
+/*돌봄 기능 3가지 아이콘, 설명 텍스트*/
+.wrap2>h2 {
+  margin: 100px 0 ;
+  text-align: center;
+}
+.wrap2>.container2 {
+  width: 1170px;
+  margin: 0 auto;
+}
+.wrap2>.container2>.iconbox {
+  display: flex;
+  gap: 30px;
+}
+.iconbox>img {
+  width: 300px;
+  height: 300px;
+}
+.textbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.textbox>.textbox1 {
+  margin-bottom: 50px;
+}
+.textbox>.textbox1>.textbox1-1 {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.textbox>.textbox1>.textbox1-1>h3 {
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+.textbox2>ul>li {
+  color: #979797;
+  margin-bottom: 15px;
+}
+
+/*서비스 혁신 미래 카드 3개*/
+.wrap3 {
+  width: 100%;
+  height: 1300px;
+  background-image: url(../img/sub01/bg01.png);
+  background-size: cover;
+  color: #fff;
+}
+.wrap3>h1 {
+  height: 200px;
+  line-height: 200px;
+  margin: 100px 0 200px 0;
+  padding-top: 100px;
+  text-align: center;
+}
+.cardbox {
+  width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between
+}
+.cardbox>.card {
+  width: 430px;
+  height: 630px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  border: 1px solid #979797;
+  text-align: center;
+}
+.cardbox>.card>.top {
+  margin-bottom: 100px;
+}
+.cardbox>.card>.top>h3 {
+  margin-bottom: 20px;
+}
+.cardbox>.card>.mid {
+  color: #aaa;
+}
+
+/*AI 자유대화 이미지, 설명 텍스트*/
+.wrap4 {
+height: 800px;
+background-color: #f2f2f2;
+}
+.wrap4>.title {
+  text-align: center;
+  overflow: hidden;
+}
+.wrap4>.title>h2 {
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.wrap4>.title>p {
+  color: #979797;
+  margin-bottom: 50px;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+.box>.textbox>h3 {
+  color: #ff4400;
+  margin-bottom: 30px;
+}
+.box>.textbox>ul {
+  list-style:disc;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+.box>.textbox>p {
+  font-size: 12px;
+  color: #979797;
+}
+/*푸터영역*/
+.footer {
+  background-color: #36383D;
+  color: #ccc;
+  padding: 50px 100px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.footer>.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.footer>.top>.logo img {
+  width: 200px;
+  height: 200px;
+}
+.footer>.top>.text1>ul {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.footer>.top>.text1>ul>li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer>.top>.text1>ul>li>img {
+  width: 20px;
+  height: 20px;
+}
+.footer>.top>.text2>ul>li:nth-child(1) {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ff4400;
+}
+.footer>.top>.text2>ul>li:nth-child(2) {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+.footer>.top>.text2>ul>li:nth-child(3) {
+  font-size: 14px;
+}
+.footer>.bot {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 30px;
+  border-top: 1px solid #505050;
+}
+.footer>.bot>.text3>ul {
+  display: flex;
+  flex-direction: column;
+}
+.footer>.bot>.text3>ul>li {
+  color: #acacac;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.footer>.bot>.appicon>h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.footer>.bot>.appicon>.appimg {
+  display: flex;
+  gap: 10px;
+}

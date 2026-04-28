@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>보호자 대시보드</title>
+</head>
+<link rel="stylesheet" href="../css/sub02.css">
+<body>
+  <!--헤더 영역-->
+  <header>
+    <div id="logo"><a href="../html/dodam-main.html"><img src="../img/main/logo.png" alt="브랜드로고"></a></div>
+    <div class="nav">
+      <ul>
+        <li><a href="../html/sub01.html">서비스 및 주요기능 소개</a></li>
+        <li><a href="../html/sub02.html">보호자 대시보드</a></li>
+        <li><a href="../html/login.html">로그인</a> / <a href="../html/singup.html">회원가입</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!--섹션 영역-->
+
+  <!--메인이미지, 메인 이미지위 텍스트, 버튼-->
+  <div class="wrap1">
+    <div class="textbox">
+      <div class="title">
+        <h3>보호자 대시보드</h3>
+        <p>홀로 계신 부모님의 일상, 이제는 실시간으로 확인하세요</p>
+      </div>
+      <div class="but">
+        <button><a href="../html/detail.html">실시간 현황보기</a></button>
+        <button><a href="../html/detail.html">주간 리포트 현황</a></button>
+      </div>
+    </div>
+  </div>
+
+  <!--현재 상태, 현황 요약 카드 3개-->
+  <div class="wrap2">
+    <div class="title1">
+      <h2>부모님 현황 요약(Daily Summary)</h2>
+      <p>지금 바로 부모님의 상태를 확인하세요</p>
+      <p>현재 부모님은 평온한 상태 입니다.</p>
+    </div>
+    <div class="cardbox">
+      <div class="card">
+        <div class="iconbox">
+          <img src="../img/sub02/icon1.png" alt="운동 아이콘">
+          <p>활동량</p>
+          <div class="circle">
+            <p>80%</p>
+          </div>
+          <p>오늘 5,200걸음</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="iconbox">
+          <img src="../img/sub02/icon2.png" alt="식기 아이콘">
+          <p>식사/복약</p>
+          <div class="text">
+            <img src="../img/sub02/checkicon.png" alt="체크 아이콘">
+            <p>아침 식사 완료<br>
+              (09:00)
+            </p>
+          </div>
+          <div class="text">
+            <img src="../img/sub02/checkicon.png" alt="체크 아이콘">
+            <p>아침 식사 후 약 복용<br>
+              (10:24)
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="iconbox">
+          <img src="../img/sub02/icon3.png" alt="수면 아이콘">
+          <p>수면 데이터</p>
+          <div class="graph">
+            <img src="../img/sub02/img03.png" alt="카드 그래프">
+          </div>
+          <p>수면시간 : 7시간 30분</p>
+        </div>
+      </div>
+
+    <!--실시간 위치 공유 및 움직임 감지-->
+    </div>
+    <div class="title2">
+      <h2>실시간 위치 공유 및 움직임 감지</h2>
+      <div class="imgbox">
+        <img src="../img/sub02/map.png" alt="지도 이미지">
+        <div class="text">
+          <p>현재 위치 : 거실</p><br>
+          <p>실시간 움직임 감지</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--건강, 수면 그래프, 건강 점수, 아이콘-->
+  <div class="wrap3">
+    <div class="title">
+      <h2>정밀 건강 리포트</h2>
+      <p>최근 며칠 동안 기상 시간이 평소보다 한 시간 늦어졌습니다.</p>
+    </div>
+    <div class="imgbox">
+      <img src="../img/sub02/img01.png" alt="그래프 이미지">
+      <div class="circlebox">
+        <div class="circle2">
+          <p>85</p>
+        </div>
+        <p>건강 점수</p>
+      </div>
+    </div>
+    <div class="bot">
+      <div class="iconbox">
+        <img src="../img/sub02/icon4.png" alt="심박수 아이콘">
+        <p>평균 심박수 : 72 bpm</p>
+      </div>
+
+      <div class="iconbox">
+        <img src="../img/sub02/icon5.png" alt="구름 아이콘">
+        <p>수면의 질 : 좋음, 7.5시간</p>
+      </div>
+    </div>
+  </div>
+
+  <!--리포트 카드 2개, 아이콘-->
+  <div class="wrap4">
+    <div class="title">
+      <h1>정서 케어 및 대화 리포트</h1>
+    </div>
+    <div class="cardbox">
+      <div class="card">
+        <h2>오늘의 감정 상태</h2>
+        <div class="imgbox">
+          <img src="../img/sub02/icon9.png" alt="표정 아이콘">
+          <p>평온함</p>
+        </div>
+        <p>부모님의 목소리 톤과 대화 흐름을 종합 분석한 결과 입니다.</p>
+      </div>
+
+      <div class="card">
+        <h2>AI 대화 빈도</h2>
+        <div class="textbox">
+          <div class="left">
+            <h2>6회</h2>
+            <p>오늘 대화 횟수</p>
+          </div>
+          <div class="right">
+            <h2>18분 40초</h2>
+            <p>총 대화 시간</p>
+          </div>
+        </div>
+        <p>부모님의 목소리 톤과 대화 흐름을 종합 분석한 결과 입니다.</p>
+      </div>
+    </div>
+  </div>
+
+  <!--실내 환경지수 아이콘, 수치-->
+  <div class="wrap5">
+    <div class="top">
+      <h1>실시간 실내 환경 지수</h1>
+      <div class="iconbox">
+        <div class="icon">
+          <img src="../img/sub02/icon6.png" alt="온도 아이콘">
+          <p>온도 <span>24</span>℃</p>
+        </div>
+
+        <div class="icon">
+          <img src="../img/sub02/icon7.png" alt="습도 아이콘">
+          <p>습도 24℃</p>
+        </div>
+
+        <div class="icon">
+          <img src="../img/sub02/icon8.png" alt="구름 아이콘">
+          <p><span>15 </span>㎍/㎥</p>
+        </div>
+      </div>
+      <div class="home">
+        <img src="../img/sub02/iconhome.png" alt="집 아이콘">
+        <p>실내 공기가 쾌적해요!</p>
+      </div>
+    </div>
+
+    <!--활동 감지 그래프, 텍스트, 아이콘-->
+    <div class="bot">
+      <h1>실시간 활동 감지</h1>
+      <img src="../img/sub02/img02.png" alt="감지 이미지">
+      <div class="textbox">
+        <img src="../img/sub02/icondanger.png" alt="경고 아이콘">
+        <p>장시간(1시간) 동안 움직임이 감지되지 않습니다.<br>
+          주의 및 확인 해주세요
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!--푸터영역-->
+  <div class="footer">
+    <div class="top">
+      <div class="logo">
+        <img src="../img/main/footerlogo.png" alt="푸터 로고">
+        <p>기술의 온기로 가족의 마음을 잇는<br>
+          시니어 케어 솔루션, 도담</p><br>
+        <p>© 2026 DODAM Inc. All rights reserved.</p>
+      </div>
+      <div class="text1">
+        <ul>
+          <li><img src="../img/main/footericon1.png" alt="체크 아이콘"> ISO 27001 정보보안 인증 취득</li>
+          <li><img src="../img/main/footericon1.png" alt="체크 아이콘"> 의료기기 품질경영시스템 인증</li>
+        </ul>
+      </div>
+      <div class="text2">
+        <ul>
+          <li>1566-1566</li>
+          <li>24시 긴급 관제센터</li>
+          <li>응급 상황 시 연결</li>
+        </ul>
+      </div>
+    </div>
+    <div class="bot">
+      <div class="text3">
+        <ul>
+          <li>(주)도담 | 대표이사: 고혁준 | 사업자등록번호: 123-45-78912 | 개인정보보호책임자: 고혁준</li>
+          <li>주소: 대구광역시 수성구 알파시티로 77, 도담빌딩 10층 (본사) / 연구소: 대구광역시 달서구 이곡로 77</li>
+          <li>통신판매업신고: 제2026-서울12-1234호 | 고객문의: help@dodamcare.com</li>
+          <li>[개인정보처리방침] | 이용약관 | 위치정보 이용약관 | [이메일 무단수집 거부]</li>
+        </ul>
+      </div>
+      <div class="appicon">
+        <h3>App Download</h3>
+        <div class="appimg">
+          <img src="../img/main/footericon2.png" alt="앱스토어">
+          <img src="../img/main/footericon3.png" alt="구글플레이">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,372 @@
+@charset "UTF-8";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  font-family: 'Judson', serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+body {
+  background-color: black;
+  color: #999;
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+/*헤더 영역*/
+header {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 600px;
+}
+#logo>a>img {
+  width: 150px;
+  height: 100px;
+}
+.nav>ul {
+  width: 600px;
+  height: 150px;
+  float: right;
+  font-style: italic;
+}
+.nav>ul>li {
+  padding: 0 30px;
+  line-height: 150px;
+  float: left;
+}
+.nav>ul>li:nth-child(1) {
+  font-weight: bold;
+  color: #fff;
+  text-decoration: line-through;
+}
+header>.nav>ul>li>a:hover {
+  font-weight: bold;
+  color: #fff;
+  text-decoration: line-through;
+}
+/*메인 영역*/
+.main {
+  width: 100%;
+  height: 1080px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  position: relative;
+}
+.main::before {
+  content: '';
+  inset: 0;
+  position: absolute;
+  background-image: url('../img/sub01/main.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  z-index: 0;
+}
+.main>.text{
+  position: relative;
+  z-index: 1;
+}
+.main>.text>p:nth-child(1) {
+  margin-bottom: 50px;
+}
+.main>.text>h2 {
+  color: #fff;
+  margin-bottom: 100px;
+}
+.main>.text>p:nth-child(3)>span {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  font-style: italic;
+}
+/*vlaues of space*/
+.values {
+  width: 100%;
+  height: 1080px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.values>.container {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.values>.container>.text {
+  padding-left: 200px;
+}
+.values>.container>.text>p:nth-child(1) {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.values>.container>.text>h1 {
+  font-size: 50px;
+  font-style: italic;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.values>.container>.text>p:nth-child(3) {
+  font-size: 14px;
+}
+/*creative*/
+.creative {
+  width: 100%;
+  height: 1080px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.creative>.container {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.creative>.container>.text {
+  padding-right: 200px;
+}
+.creative>.container>.text>p:nth-child(1) {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.creative>.container>.text>h1 {
+  font-size: 50px;
+  font-style: italic;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.creative>.container>.text>p:nth-child(3) {
+  font-size: 14px;
+}
+/*perfect*/
+.perfect {
+  width: 100%;
+  height: 1080px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.perfect>.container {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.perfect>.container>.text {
+  padding-left: 200px;
+}
+.perfect>.container>.text>p:nth-child(1) {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.perfect>.container>.text>h1 {
+  font-size: 50px;
+  font-style: italic;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.perfect>.container>.text>p:nth-child(3) {
+  font-size: 14px;
+}
+/*dream*/
+.dream {
+  width: 100%;
+  height: 1080px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dream>.container {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.dream>.container>.text {
+  padding-right: 200px;
+}
+.dream>.container>.text>p:nth-child(1) {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.dream>.container>.text>h1 {
+  font-size: 50px;
+  font-style: italic;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.dream>.container>.text>p:nth-child(3) {
+  font-size: 14px;
+}
+/*philosophy*/
+.philosophy {
+  width: 100%;
+  height: 1080px;
+  background-image: url(../img/sub01/bg01.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 200px;
+}
+.philosophy>.text>.title {
+  font-size: 20px;
+  font-style: italic;
+  margin: 30px 0;
+}
+.philosophy>.text>h2 {
+  color: #fff;
+  margin-bottom: 50px;
+}
+.philosophy>.text>p {
+  font-size: 14px;
+}
+.circlebox {
+  display: flex;
+  gap: 50px;
+}
+.circle {
+  width: 350px;
+  height: 350px;
+  background-color: #000;
+  border: 1px solid #999;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.circle>img {
+  margin-bottom: 20px;
+}
+.circlebox>.arrow {
+  color: #999;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.circlebox>.arrow>span {
+  width: 50px;
+  height: 50px;
+  border: 1px dotted;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 20px;
+}
+.circlebox>.arrow>span::after {
+  content: '';
+  border: 1px dotted;
+  width: 48px;
+  position: absolute;
+  right: -50px;
+}
+.circlebox>.arrow>span::before {
+  content: '';
+  border: 1px dotted;
+  width: 48px;
+  position: absolute;
+  right:50px;
+}
+
+/*푸터영역*/
+.f-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  margin-bottom: 100px;
+}
+.f-top>.menu {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.f-top>.menu>.quick>h3,
+.f-top>.menu>.consultation>h3,
+.f-top>.menu>.social>h3 {
+  width: 285px;
+  border-bottom: 1px solid;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  color: #ddd;
+  font-style: italic;
+}
+.f-top>.menu>.quick>ul>li {
+  font-style: italic;
+}
+.f-top>.menu>.quick>ul>li,
+.f-top>.menu>.consultation>ul>li,
+.f-top>.menu>.social>ul>li {
+  margin-bottom: 10px;
+}
+.f-top>.menu>.quick>ul>li>a:hover {
+  font-weight: bold;
+  color: #fff;
+  text-decoration: line-through;
+}
+.f-top>.menu>.social>ul>li>a {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.f-top>.menu>.social>ul>li>a>img {
+  object-fit: contain;
+}
+.f-bot {
+  text-align: center;
+  border-top: 1px solid;
+  padding-top: 50px;
+}
+.f-bot ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.f-bot>p {
+  font-size: 12px;
+  margin-bottom: 50px;
+}

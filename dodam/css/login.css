@@ -1,0 +1,182 @@
+@charset "UTF-8";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #323232;
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+
+/*헤더 영역*/
+header {
+  width: 1170px;
+  height: 150px;
+  margin: 0 auto;
+}
+#logo>a>img {
+  width: 150px;
+  height: 150px;
+  float: left;
+}
+.nav>ul {
+  width: 600px;
+  height: 150px;
+  float: right;
+}
+.nav>ul>li {
+  padding: 0 30px;
+  line-height: 150px;
+  float: left;
+}
+header>.nav>ul>li>a:hover {
+  font-weight: bold;
+}
+
+/*로그인 타이틀*/
+.wrap {
+  background-color: #323232;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  width: 770px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 36px;
+  margin: 50px 0;
+}
+.wrap>.title>p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #979797;
+}
+
+/*정보 입력창*/
+.id-pw {
+  width: 770px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.id-pw>h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+input[type=text], input[type=password] {
+  height: 60px;
+  background-color: #323232;
+  border: 1px solid #9A9A9A;
+  border-radius: 10px;
+  font-size: 14px;
+  padding-left: 20px;
+  color: #fff;
+}
+input[type=text]::placeholder,
+input[type=password]::placeholder {
+  color: #9A9A9A;
+}
+/*로그인 버튼, 상태유지, 찾기*/
+.login>p {
+  color: #9A9A9A;
+  text-align: center;
+}
+input[type=submit] {
+  width: 770px;
+  height: 80px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.textbox1 {
+  width: 770px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  color: #9A9A9A;
+}
+.check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+}
+.textbox1>.check>label {
+  cursor: pointer;
+}
+.find ul {
+  display: flex;
+}
+
+/*카카오톡, 네이버 로그인 버튼*/
+.butbox {
+  width: 770px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.butbox>button {
+  width: 380px;
+  height: 80px;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.butbox>button>a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #9A9A9A;
+}
+
+/*회원가입 이동 버튼*/
+.textbox2 {
+  width: 770px;
+  display: flex;
+  justify-content: space-between;
+  color: #9A9A9A;
+}
+.textbox2>p>span {
+  color: #fff;
+  font-weight: 600;
+}
+
+/*푸터 영역*/
+.textbox3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textbox3>ul {
+  display: flex;
+  gap: 50px;
+  font-size: 14px;
+  color: #9A9A9A;
+  margin: 50px 0;
+}
+.bot {
+  color: #9A9A9A;
+  padding-bottom: 50px;
+}

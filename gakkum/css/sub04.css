@@ -1,0 +1,387 @@
+@charset "UTF-8";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  font-family: 'Judson', serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+body {
+  background-color: black;
+  color: #999;
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+/*헤더 영역*/
+header {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 600px;
+}
+#logo>a>img {
+  width: 150px;
+  height: 100px;
+}
+.nav>ul {
+  width: 600px;
+  height: 150px;
+  float: right;
+  font-style: italic;
+}
+.nav>ul>li {
+  padding: 0 30px;
+  line-height: 150px;
+  float: left;
+}
+.nav>ul>li:nth-of-type(4) {
+  font-weight: bold;
+  color: #fff;
+  text-decoration: line-through;
+}
+header>.nav>ul>li>a:hover {
+  font-weight: bold;
+  color: #fff;
+  text-decoration: line-through;
+}
+/*신청서*/
+.container {
+  width: 100%;
+  height: 1900px;
+  background-image: linear-gradient(45deg, rgb(153 153 153 ) 0%, rgb(0 0 0) 50%, rgb(153 153 153) 100%);
+}
+.container>.wrap {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 250px;
+}
+.container>.wrap>.textbox>p:nth-of-type(1) {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.container>.form {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px;
+}
+.container>.form>fieldset {
+  width: 850px;
+  height: 950px;
+  border: none;
+}
+.container>.form>fieldset>legend {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ddd;
+}
+.container>.form>fieldset>p {
+  margin-top: 50px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 50px;
+}
+.container>.form>fieldset>.box {
+  display: flex;
+  justify-content: space-between;
+}
+.container>.form>fieldset>.box>ul>li {
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+input[type=text] {
+  width: 265px;
+  height: 40px;
+  padding-left: 5px;
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px solid #999;
+  color: #999;
+}
+.container>.form>fieldset>.box>ul>li>label {
+  width: 100px;
+  color: #ddd;
+}
+.container>.form>fieldset>.box>ul>li>label>span {
+  color: gold;
+}
+.container>.form>fieldset>.box>ul>li>select {
+  width: 265px;
+  height: 40px;
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px solid #999;
+  color: #999;
+}
+input[type=date] {
+  width: 265px;
+  height: 40px;
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px solid #999;
+  color: #999;
+  padding-left: 5px;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(60%);
+  cursor: pointer;
+}
+/*문의내용*/
+.container>.form>fieldset>.area {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.container>.form>fieldset>.area>label {
+  color: #ddd;
+  vertical-align: middle;
+}
+.container>.form>fieldset>.area>textarea {
+  width: 700px;
+  height: 250px;
+  border: 1px solid #999;
+  background-color: inherit;
+}
+/*개인정보 수집 및 이용안내*/
+.container>.form>.terms>.title {
+  margin-bottom: 30px;
+  color: #ddd;
+  font-weight: bold;
+}
+.container>.form>.terms>.content {
+  border: 1px solid #999;
+  border-radius: 20px;
+  padding: 20px ;
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+.container>.form>.terms>.agree>ul>li {
+  height: 50px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  line-height: 50px;
+  position: relative;
+}
+.container>.form>.terms>.agree>ul>li:nth-of-type(1) {
+  font-weight: bold;
+  color: #ddd;
+}
+.container>.form>.terms>.agree>ul>li>label>span {
+  color: gold;
+  position: absolute;
+  top: -10%;
+  right: 373px;
+}
+input[type=checkbox] {
+   appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  margin-right: 10px;
+  line-height: 18px;
+}
+input[type="checkbox"]:checked {
+  background-color: inherit;
+}
+input[type="checkbox"]:checked::after {
+  content: '✓';
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+input[type="checkbox"]:hover {
+  border: 2px solid;
+  border-color: #fff;
+}
+input[type=submit] {
+  color: #ddd;
+  border: 1px solid #ddd;
+  background-color: inherit;
+  padding: 5px 8px;
+  cursor: pointer;
+  display: block;
+  margin: 45px auto;
+}
+
+/*vision*/
+.vision {
+  text-align: center;
+}
+.vision>.top>h3 {
+  margin: 200px 0 100px;
+}
+.vision>.top>img {
+  margin: 0 auto;
+  border-radius: 50px;
+}
+.vision>.bot>h3 {
+  margin: 100px 0 ;
+}
+.vision>.bot>.imgbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.vision>.bot>.imgbox>.r-img {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.vision>.bot>.imgbox>.l-img>img,
+.vision>.bot>.imgbox>.r-img>img {
+  border-radius: 50px;
+}
+/*location*/
+
+.location {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin: 300px;
+}
+.location>.map>iframe {
+  width: 1000px;
+  height: 600px;
+}
+.location>.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 12px;
+}
+.location>.text>h1 {
+  color: #fff;
+  font-style: italic;
+}
+.location>.text>.top>h4,
+.location>.text>.mid>h4,
+.location>.text>.bot>h4 {
+  color: #ddd;
+  margin-bottom: 20px;
+}
+.location>.text>.top>h4>span,
+.location>.text>.mid>h4>span,
+.location>.text>.bot>h4>span {
+  font-style: italic;
+}
+.location>.text>.bot>ul>li {
+  font-style: italic;
+}
+/*careers*/
+.careers>h1 {
+  width: 1300px;
+  border-bottom: 1px solid #999;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  color: #fff;
+  font-style: italic;
+}
+.careers>p {
+  text-align: center;
+  margin: 100px 0;
+  font-size: 18px;
+  color: #ddd;
+}
+.careers>.imgbox {
+  width: 1300px;
+  height: 600px;
+  background-image: url(../img/sub04/bg01.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  margin: 0 auto;
+}
+.careers>.imgbox>p {
+  text-align: center;
+  font-size: 44px;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 100px;
+}
+/*푸터영역*/
+.f-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  margin: 100px 0;
+}
+.f-top>.menu {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.f-top>.menu>.quick>h3,
+.f-top>.menu>.consultation>h3,
+.f-top>.menu>.social>h3 {
+  width: 285px;
+  border-bottom: 1px solid;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  color: #ddd;
+  font-style: italic;
+}
+.f-top>.menu>.quick>ul>li {
+  font-style: italic;
+}
+.f-top>.menu>.quick>ul>li,
+.f-top>.menu>.consultation>ul>li,
+.f-top>.menu>.social>ul>li {
+  margin-bottom: 10px;
+}
+.f-top>.menu>.quick>ul>li>a:hover {
+  font-weight: bold;
+  color: #fff;
+  text-decoration: line-through;
+}
+.f-top>.menu>.social>ul>li>a {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.f-top>.menu>.social>ul>li>a>img {
+  object-fit: contain;
+}
+.f-bot {
+  text-align: center;
+  border-top: 1px solid;
+  padding-top: 50px;
+}
+.f-bot ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.f-bot>p {
+  font-size: 12px;
+  margin-bottom: 50px;
+}

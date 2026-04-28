@@ -1,0 +1,275 @@
+@charset "UTF-8";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  font-family: 'Judson', serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+body {
+  background-color: black;
+  color: #999;
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+/*헤더 영역*/
+header {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 600px;
+}
+#logo>a>img {
+  width: 150px;
+  height: 100px;
+}
+.nav>ul {
+  width: 600px;
+  height: 150px;
+  float: right;
+  font-style: italic;
+}
+.nav>ul>li {
+  padding: 0 30px;
+  line-height: 150px;
+  float: left;
+}
+.nav>ul>li:nth-of-type(3) {
+  font-weight: bold;
+  color: #fff;
+  text-decoration: line-through;
+}
+header>.nav>ul>li>a:hover {
+  font-weight: bold;
+  color: #fff;
+  text-decoration: line-through;
+}
+/*섹션 영역*/
+/*메인*/
+.main {
+  width: 100%;
+  height: 1080px;
+  background-image: url(../img/sub03/bg01.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+.main>h1>span {
+  font-style: italic;
+  font-size: 30px;
+}
+/*step*/
+.container {
+  width: 100%;
+  height: 4320px;
+  background-image: url(../img/sub03/bg02.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+/*step text*/
+.container>.step01 {
+  position: absolute;
+  top: 5%;
+  left: 23%;
+  text-align: center;
+}
+.container>.step02 {
+  position: absolute;
+  top: 27%;
+  right: 23%;
+  text-align: center;
+}
+.container>.step03 {
+  position: absolute;
+  top: 50%;
+  left: 23%;
+  text-align: center;
+}
+.container>.step04 {
+  position: absolute;
+  top: 70%;
+  right: 23%;
+  text-align: center;
+}
+.container>.step05 {
+  position: absolute;
+  top: 89%;
+  left: 23%;
+  text-align: center;
+}
+.container>.step01>p {
+  margin: 50px 0 65px;
+}
+.container>.step01>a {
+  border: 1px solid;
+  padding: 15px;
+}
+.container>.step02>p,
+.container>.step03>p,
+.container>.step04>p,
+.container>.step05>p {
+  margin-top: 50px;
+}
+.container>.step01>h1, 
+.container>.step02>h1, 
+.container>.step03>h1, 
+.container>.step04>h1, 
+.container>.step05>h1 {
+  color: #fff;
+  font-style: italic;
+}
+/*step img*/
+.container>img:nth-of-type(1) {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+}
+.container>img:nth-of-type(2) {
+  position: absolute;
+  top: 29%;
+  left: 15%;
+}
+.container>img:nth-of-type(3) {
+  position: absolute;
+  top: 45%;
+  right: 30%;
+}
+.container>img:nth-of-type(4) {
+  position: absolute;
+  top: 41%;
+  right: 10%;
+}
+.container>img:nth-of-type(5) {
+  position: absolute;
+  top: 55%;
+  right: 28%;
+}
+.container>img:nth-of-type(6) {
+  position: absolute;
+  top: 51%;
+  right: 8%;
+}
+.container>img:nth-of-type(7) {
+  position: absolute;
+  top: 65%;
+  left: 10%;
+}
+.container>img:nth-of-type(8) {
+  position: absolute;
+  top: 74%;
+  left: 10%;
+}
+.container>img:nth-of-type(9) {
+  position: absolute;
+  top: 74%;
+  left: 31%;
+}
+
+/*space*/
+.space {
+  margin-bottom: 0px;
+}
+.space>.title {
+  margin: 200px 0 ;
+  text-align: center;
+}
+.space>.title>p:nth-of-type(1) {
+  margin-bottom: 50px;
+  font-size: 28px;
+  color: #fff;
+}
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+.wrap>.box {
+  text-align: center;
+  color: #fff;
+}
+.wrap>.box>h3 {
+  margin-bottom: 50px;
+}
+
+/*푸터영역*/
+.f-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  margin: 100px 0;
+}
+.f-top>.menu {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.f-top>.menu>.quick>h3,
+.f-top>.menu>.consultation>h3,
+.f-top>.menu>.social>h3 {
+  width: 285px;
+  border-bottom: 1px solid;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  color: #ddd;
+  font-style: italic;
+}
+.f-top>.menu>.quick>ul>li {
+  font-style: italic;
+}
+.f-top>.menu>.quick>ul>li,
+.f-top>.menu>.consultation>ul>li,
+.f-top>.menu>.social>ul>li {
+  margin-bottom: 10px;
+}
+.f-top>.menu>.quick>ul>li>a:hover {
+  font-weight: bold;
+  color: #fff;
+  text-decoration: line-through;
+}
+.f-top>.menu>.social>ul>li>a {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.f-top>.menu>.social>ul>li>a>img {
+  object-fit: contain;
+}
+.f-bot {
+  text-align: center;
+  border-top: 1px solid;
+  padding-top: 50px;
+}
+.f-bot ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.f-bot>p {
+  font-size: 12px;
+  margin-bottom: 50px;
+}

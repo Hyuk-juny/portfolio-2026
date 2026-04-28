@@ -1,0 +1,467 @@
+@charset "UTF-8";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #323232;
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+
+/*헤더 영역*/
+header {
+  width: 1170px;
+  height: 150px;
+  margin: 0 auto;
+}
+#logo>a>img {
+  width: 150px;
+  height: 150px;
+  float: left;
+}
+.nav>ul {
+  width: 600px;
+  height: 150px;
+  float: right;
+}
+.nav>ul>li {
+  padding: 0 30px;
+  line-height: 150px;
+  float: left;
+}
+header>.nav>ul>li>a:hover {
+  font-weight: bold;
+}
+
+/*섹션 영역*/
+/*메인이미지, 메인 이미지위 텍스트, 버튼*/
+.wrap1 {
+  width: 100%;
+  height: 1080px;
+  background-image: url(../img/sub02/bg01.png);
+  background-size: cover;
+  color: #fff;
+}
+.wrap1>.textbox {
+  height: 1080px;
+  display: flex;
+  flex-direction: column;
+  align-items:baseline;
+  justify-content: center;
+  padding-left: 300px;
+}
+.wrap1>.textbox>.title>p {
+  margin-top: 20px;
+  color: #ddd;
+}
+.but {
+  margin-top: 100px;
+}
+.but>button:nth-child(1) {
+  width: 180px;
+  height: 50px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #ff4400;
+  border: none;
+  border-radius: 10px;
+}
+.but>button:nth-child(2) {
+  width: 180px;
+  height: 50px;
+  font-size: 16px;
+  background-color: inherit;
+  color: #ff4400;
+  border: 1px solid #979797;
+  border-radius: 10px;
+}
+/*현재 상태, 현황 요약 카드 3개*/
+.wrap2 {
+  width: 100%;
+  height: 1650px;
+  background-color: #323232;
+  color: #fff;
+}
+.wrap2>.title1 {
+  text-align: center;
+  padding-top: 100px;
+}
+.wrap2>.title1>p:nth-child(2) {
+  margin-top: 10px;
+  color: #ddd;
+}
+.wrap2>.title1>p:nth-child(3) {
+  width: 400px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 24px;
+  margin: 100px auto;
+  color: #ddd;
+  border: 1px solid #979797;
+  border-radius: 10px;
+}
+.wrap2>.cardbox {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content:space-between;
+}
+.wrap2>.cardbox>.card {
+  width: 250px;
+  height: 350px;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #323232;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.wrap2>.cardbox>.card>.iconbox {
+  display: flex;
+  flex-direction:column ;
+  align-items: center;
+}
+.wrap2>.cardbox>.card>.iconbox>img {
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.wrap2>.cardbox>.card>.iconbox>p:nth-child(2) {
+  position: relative;
+  margin-bottom: 30px;
+}
+.wrap2>.cardbox>.card>.iconbox>p:nth-child(2)::after {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: #2ecc71;
+  border-radius: 100%;
+  position: absolute;
+  right: -60px;
+  top: -40px;
+}
+.wrap2>.cardbox>.card>.iconbox>.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: conic-gradient(#2ecc71 0% 80%, #e0e0e0 80% 100%);
+  position: relative;
+  margin-bottom: 30px;
+}
+.circle::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75px;
+  height: 75px;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 1;
+}
+.wrap2>.cardbox>.card>.iconbox>.circle>p {
+  position: relative;
+  z-index: 2;
+  line-height: 100px;
+}
+.wrap2>.cardbox>.card>.iconbox>.text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.wrap2>.cardbox>.card>.iconbox>.text>img {
+  padding-right: 10px;
+  padding-bottom: 20px;
+}
+.wrap2>.cardbox>.card>.iconbox>.graph {
+  width: 200px;
+  height: 80px;
+  margin-bottom: 30px;
+}
+
+/*실시간 위치 공유 및 움직임 감지*/
+.wrap2>.title2>h2 {
+  text-align: center;
+  margin: 150px 0;
+}
+.wrap2>.title2>.imgbox {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+.wrap2>.title2>.imgbox>.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*건강, 수면 그래프, 건강 점수, 아이콘*/
+.wrap3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrap3>.title {
+  width: 700px;
+  text-align: left;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.wrap3>.title>h2 {
+  margin-bottom: 10px;
+}
+.wrap3>.imgbox {
+  display: flex;
+  gap: 50px;
+}
+.wrap3>.imgbox>.circlebox>.circle2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: conic-gradient(#72acc1 0% 85%, #e0e0e0 80% 100%);
+  position: relative;
+  margin-bottom: 30px;
+}
+.circle2::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75px;
+  height: 75px;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 1;
+}
+.wrap3>.imgbox>.circlebox {
+  margin-top: 50px;
+}
+.wrap3>.imgbox>.circlebox>.circle2>p {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 100px;
+  position: relative;
+  z-index: 2;
+}
+.wrap3>.imgbox>.circlebox>p {
+  text-align: center;
+  font-weight: 600;
+}
+.wrap3>.bot {
+  display: flex;
+  gap: 150px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+.wrap3>.bot>.iconbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*리포트 카드 2개, 아이콘*/
+.wrap4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 200px;
+}
+.wrap4>.title {
+  margin-bottom: 100px;
+}
+.wrap4>.cardbox {
+  width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+.wrap4>.cardbox>.card {
+  border: 1px solid;
+  width: 550px;
+  height: 400px;
+  background-color: #323232;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrap4>.cardbox>.card>h2 {
+  margin-bottom: 50px;
+}
+.wrap4>.cardbox>.card>.imgbox {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+.wrap4>.cardbox>.card>.imgbox>p {
+  font-size: 30px;
+  font-weight: 400;
+}
+.wrap4>.cardbox>.card>.textbox {
+  text-align: center;
+  display: flex;
+  margin-bottom: 50px;
+}
+.wrap4>.cardbox>.card>.textbox>.left>h2,
+.wrap4>.cardbox>.card>.textbox>.right>h2 {
+  margin-bottom: 20px;
+}
+.wrap4>.cardbox>.card>.textbox>.left {
+  padding-right: 20px;
+  border-right: 1px solid;
+}
+.wrap4>.cardbox>.card>.textbox>.right {
+  padding-left: 20px;
+}
+
+/*실내 환경지수 아이콘, 수치*/
+.wrap5 {
+background-color: #d9eef6;
+overflow: hidden;
+}
+.wrap5>.top {
+  width: 1170px;
+  margin: 100px auto;
+  background-color: #fff;
+  border-radius: 30px;
+  text-align: center;
+}
+.wrap5>.top>h1 {
+  padding: 50px 0;
+}
+.wrap5>.top>.iconbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 150px;
+}
+.wrap5>.top>.iconbox>.icon>img {
+  margin-bottom: 20px;
+}
+.wrap5>.top>.iconbox>.icon>p>span {
+  color: #2ecc71;
+}
+.wrap5>.top>.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  color: #2ecc71;
+  gap: 10px;
+}
+
+/*활동 감지 그래프, 텍스트, 아이콘*/
+.wrap5>.bot {
+  width: 1170px;
+  margin: 100px auto;
+  background-color: #fff;
+  border-radius: 30px;
+  text-align: center;
+}
+.wrap5>.bot>h1 {
+  padding: 50px 0;
+}
+.wrap5>.bot>img {
+  margin: 0 auto;
+}
+.wrap5>.bot>.textbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  text-align: left;
+  padding: 30px 0;
+}
+
+/*푸터영역*/
+.footer {
+  background-color: #36383D;
+  color: #ccc;
+  padding: 50px 100px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.footer>.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.footer>.top>.logo img {
+  width: 200px;
+  height: 200px;
+}
+.footer>.top>.text1>ul {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.footer>.top>.text1>ul>li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer>.top>.text1>ul>li>img {
+  width: 20px;
+  height: 20px;
+}
+.footer>.top>.text2>ul>li:nth-child(1) {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ff4400;
+}
+.footer>.top>.text2>ul>li:nth-child(2) {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+.footer>.top>.text2>ul>li:nth-child(3) {
+  font-size: 14px;
+}
+.footer>.bot {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 30px;
+  border-top: 1px solid #505050;
+}
+.footer>.bot>.text3>ul {
+  display: flex;
+  flex-direction: column;
+}
+.footer>.bot>.text3>ul>li {
+  color: #acacac;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.footer>.bot>.appicon>h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.footer>.bot>.appicon>.appimg {
+  display: flex;
+  gap: 10px;
+}
+

@@ -1,0 +1,334 @@
+@charset "UTF-8";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  font-family: 'Judson', serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+body {
+  background-color: black;
+  color: #999;
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+/*헤더, 메인 영역*/
+.main {
+  width: 100%;
+  height: 1080px;
+  background-image: url(../img/main/mainhero.jpg);
+  background-size: cover;
+  background-position: center;
+}
+header {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 600px;
+}
+#logo>a>img {
+  width: 300px;
+  height: 200px;
+}
+.nav>ul {
+  width: 600px;
+  height: 150px;
+  float: right;
+  font-style: italic;
+}
+.nav>ul>li {
+  padding: 0 30px;
+  line-height: 150px;
+  float: left;
+}
+header>.nav>ul>li>a:hover {
+  font-weight: bold;
+  color: #fff;
+  text-decoration: line-through;
+}
+.main>.slider {
+  width: 100%;
+  height: 780px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main>.slider>button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/*about*/
+.about {
+  width: 100%;
+  height: 1080px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about>article {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 200px;
+}
+.about>article>h1 {
+  color: #fff;
+  margin-bottom: 50px;
+  font-style: italic;
+}
+.about>article>p:nth-child(2) {
+  margin-bottom: -50px;
+}
+.about>article>p {
+  margin-top: -100px;
+}
+.about>article>a {
+  width: 120px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  border: 1px solid #ddd;
+  color: #ddd;
+  font-style: italic;
+}
+/*project*/
+.project {
+  width: 100%;
+  height: 2160px;
+}
+.project>h1 {
+  text-align: center;
+  color: #fff;
+  font-style: italic;
+}
+.project>.item {
+  width: 1300px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.project>.item>.imgbox {
+  width: 1300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.project>.item>.imgbox>a>img:hover {
+  transform: scale(1.08);
+  transition: transform 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.project>.item>.imgbox>a {
+  position: relative;
+  overflow: hidden;
+}
+.project>.item>.imgbox>a>p {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+  color: #000;
+  font-family: bold;
+  background-color: #999;
+  opacity: 0.4;
+  transform: translateY(100%);
+  transition: transform 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.project>.item>.imgbox>a:hover>p {
+   transform: translateY(0);
+}
+/*process*/
+/*process-1*/
+.process-1 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+.process-1>h1 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 50px;
+  font-style: italic;
+}
+.process-1>.text {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.process-1>.text>p {
+  margin-bottom: 30px;
+}
+.process-1>.text>p>span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+/*process card*/
+.process-1>.cardbox {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+}
+.process-1>.cardbox>.card {
+  width: 600px;
+  height: 600px;
+  text-align: center;
+}
+.process-1>.cardbox>.card>.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ddd;
+  font-style: italic;
+}
+.process-1>.cardbox>.card>p {
+  margin-bottom: 30px;
+}
+.process-1>.cardbox>.card>img {
+  margin: 0 auto;
+}
+/*process-2*/
+.process-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  margin-bottom: 200px;
+}
+.process-2>.text {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.process-2>.text>a {
+  width: 160px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid #ddd;
+  color: #ddd;
+  font-size: 14px;
+  font-style: italic;
+}
+/*contact*/
+.contact {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-bottom: 300px;
+}
+.contact>.map>iframe {
+  width: 1000px;
+  height: 600px;
+}
+.contact>.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 12px;
+}
+.contact>.text>h1 {
+  color: #fff;
+  font-style: italic;
+}
+.contact>.text>.top>h4,
+.contact>.text>.mid>h4,
+.contact>.text>.bot>h4 {
+  color: #ddd;
+  margin-bottom: 20px;
+}
+.contact>.text>.top>h4>span,
+.contact>.text>.mid>h4>span,
+.contact>.text>.bot>h4>span {
+  font-style: italic;
+}
+.contact>.text>.bot>ul>li {
+  font-style: italic;
+}
+
+/*푸터영역*/
+.f-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  margin-bottom: 100px;
+}
+.f-top>.menu {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.f-top>.menu>.quick>h3,
+.f-top>.menu>.consultation>h3,
+.f-top>.menu>.social>h3 {
+  width: 285px;
+  border-bottom: 1px solid;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  color: #ddd;
+  font-style: italic;
+}
+.f-top>.menu>.quick>ul>li {
+  font-style: italic;
+}
+.f-top>.menu>.quick>ul>li,
+.f-top>.menu>.consultation>ul>li,
+.f-top>.menu>.social>ul>li {
+  margin-bottom: 10px;
+}
+.f-top>.menu>.quick>ul>li>a:hover {
+  font-weight: bold;
+  color: #fff;
+  text-decoration: line-through;
+}
+.f-top>.menu>.social>ul>li>a {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.f-top>.menu>.social>ul>li>a>img {
+  object-fit: contain;
+}
+.f-bot {
+  text-align: center;
+  border-top: 1px solid;
+  padding-top: 50px;
+}
+.f-bot ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.f-bot>p {
+  font-size: 12px;
+  margin-bottom: 50px;
+}

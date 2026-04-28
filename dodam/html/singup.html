@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입</title>
+</head>
+<link rel="stylesheet" href="../css/signup.css">
+<body>
+  <!--헤더 영역-->
+  <header>
+    <div id="logo"><a href="../html/dodam-main.html"><img src="../img/main/logo.png" alt="브랜드로고"></a></div>
+    <div class="nav">
+      <ul>
+        <li><a href="../html/sub01.html">서비스 및 주요기능기능 소개</a></li>
+        <li><a href="../html/sub02.html">보호자 대시보드</a></li>
+        <li><a href="../html/login.html">로그인</a> / <a href="../html/singup.html">회원가입</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!--회원가입 타이틀-->
+  <div class="title">
+    <h1>보호자 회원가입</h1>
+    <p>보호자 계정을 생성하고 시작하세요</p>
+  </div>
+
+  <!--계정 정보 입력-->
+  <div class="wrap1">
+    <h2>계정 정보</h2>
+    <input type="text" placeholder="이메일 ex) dodam@dodam.ai"><br>
+    <input type="password" placeholder="비밀번호 (영문, 숫자 포함 8자 이상)"><br>
+    <input type="password" placeholder="비밀번호 확인 (영문, 숫자 포함 8자 이상)"><br>
+  </div> 
+
+  <!--보호자 정보 입력-->
+  <div class="wrap2">
+    <div class="box1">
+      <h2>보호자 정보</h2>
+      <input type="submit" value="인증번호 받기">
+    </div>
+    <input type="text" placeholder="보호자 이름"><br>
+    <input type="text" placeholder="휴대폰 번호"><br>
+    <input type="text" placeholder="인증번호 입력"><br>
+    <p>보호자 본인 확인에 사용 됩니다.</p>
+  </div>
+
+  <!--약관 동의-->
+  <div class="wrap3">
+    <h2>약관 동의</h2>
+    <input type="checkbox" id="a">
+    <label for="a"><span>전체 동의</span></label>
+    <div class="cbox">
+      <input type="checkbox" id="b">
+      <label for="b">서비스 이용약관 <span>(필수)</span></label>
+      <a href="#" target="_blank">자세히 보기</a>
+    </div>
+    <div class="cbox">
+      <input type="checkbox" id="c">
+      <label for="c">개인정보 처리방침<span>(필수)</span></label>
+      <a href="#" target="_blank">자세히 보기</a>
+    </div>
+    <input type="checkbox" id="d">
+    <label for="d">마케팅 정보 수신 (선택)</label>
+  </div>
+
+  <!--가입완료버튼, 로그인창 이동 버튼-->
+  <div class="wrap4">
+    <input type="submit" value="가입하고 시작하기">
+    <p>이미 계정이 있으신가요?</p>
+    <a href="../html/login.html">로그인</a>
+  </div>
+</body>
+</html>
