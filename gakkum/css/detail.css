@@ -332,6 +332,36 @@ header>.nav>ul>li>a:hover {
   background: none;
   cursor: pointer;
 }
+
+/*맨위, 맨아래 버튼*/
+.scroll-top,
+.scroll-bottom {
+  position: fixed;
+  right: 30px;
+  width: 45px;
+  height: 45px;
+  background: #333;
+  color: #fff;
+  border: 1px solid #999;
+  cursor: pointer;
+  font-size: 16px;
+  opacity: 0.6;
+  transition: opacity 0.3s, background 0.3s, transform 0.3s;
+}
+.scroll-top {
+  bottom: 50%;
+}
+.scroll-bottom {
+  bottom: 43%;
+}
+.scroll-top:hover,
+.scroll-bottom:hover {
+  opacity: 1;
+  background: gold;
+  color: #000;
+  border-color: gold;
+}
+
 /*푸터영역*/
 .f-top {
   display: flex;
