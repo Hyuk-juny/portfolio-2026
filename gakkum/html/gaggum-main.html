@@ -11,7 +11,7 @@
 </head>
 <body>
   <!--헤더, 메인 영역-->
-  <section class="main">
+  <section class="main" id="mainSection" >
     <header>
     <div id="logo"><a href="../html/gaggum-main.html"><img src="../img/main/logo.png" alt="브랜드로고"></a></div>
     <div class="nav">
@@ -23,13 +23,14 @@
       </ul>
   </header>
   <div class="slider">
-    <button class="slider-prev">
+    <button class="slider-prev" id="prevBtn" >
       <img src="../img/main/arrow-l.png" alt="이전 슬라이드">
     </button>
-    <button class="slider-next">
+    <button class="slider-next" id="nextBtn" >
       <img src="../img/main/arrow-r.png" alt="다음 슬라이드">
     </button>
   </div>
+  <div class="slider-indicator" id="sliderIndicator"></div>
   </section>
 
   <!--About-->
@@ -278,4 +279,57 @@
       <p>© 2026 GAGGUM DREAM. All Rights Reserved.</p>
   </section>
 </body>
+
+<script>
+  const slides = [
+  '../img/main/mainhero.jpg',
+  '../img/main/mainhero2.png',
+  '../img/main/mainhero3.png',
+  '../img/main/mainhero4.png',
+  '../img/main/mainhero5.png',
+];
+
+let currentIndex = 0;
+let autoSlideTimer;
+
+const mainSection = document.getElementById('mainSection');
+const indicatorContainer = document.getElementById('sliderIndicator');
+
+slides.forEach((_, i) => {
+  const dot = document.createElement('span');
+  dot.classList.add('dot');
+  if (i === 0) dot.classList.add('active');
+  dot.addEventListener('click', () => goToSlide(i));
+  indicatorContainer.appendChild(dot);
+});
+
+function goToSlide(index) {
+  currentIndex = (index + slides.length) % slides.length;
+  mainSection.style.backgroundImage = `url('${slides[currentIndex]}')`;
+  document.querySelectorAll('.dot').forEach((dot, i) => {
+    dot.classList.toggle('active', i === currentIndex);
+  });
+}
+
+function startAutoSlide() {
+  autoSlideTimer = setInterval(() => goToSlide(currentIndex + 1), 5000);
+}
+
+function resetAutoSlide() {
+  clearInterval(autoSlideTimer);
+  startAutoSlide();
+}
+
+document.getElementById('prevBtn').addEventListener('click', () => {
+  goToSlide(currentIndex - 1);
+  resetAutoSlide();
+});
+document.getElementById('nextBtn').addEventListener('click', () => {
+  goToSlide(currentIndex + 1);
+  resetAutoSlide();
+});
+
+goToSlide(0);
+startAutoSlide();
+</script>
 </html>

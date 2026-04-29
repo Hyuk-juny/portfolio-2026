@@ -319,3 +319,276 @@ header>.nav>ul>li>a:hover {
   display: flex;
   gap: 10px;
 }
+
+/* ============================================
+   반응형 미디어 쿼리
+============================================ */
+
+/* << 1200px 미만일때 >> */
+@media screen and (max-width:1199px){
+
+  /* 헤더 */
+  header{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 30px;
+  }
+
+  #logo>a>img{
+    width: 100px;
+    height: 100px;
+    float: none;
+  }
+
+  .nav>ul{
+    width: auto;
+    height: auto;
+    float: none;
+
+    display: flex;
+  }
+
+  .nav>ul>li{
+    float: none;
+    line-height: 60px;
+    padding: 0 15px;
+    font-size: 14px;
+  }
+
+
+  /* wrap1 */
+  .wrap1{
+    padding: 80px 30px;
+  }
+
+  .wrap1>.title{
+    margin-bottom: 60px;
+  }
+
+  .wrap1>.container{
+    width: 100%;
+    gap: 30px;
+  }
+
+  .wrap1>.container>.left{
+    width: 65%;
+  }
+
+  .wrap1>.container>.left>.left-bot>img{
+    width: 100%;
+    height: auto;
+  }
+
+
+  /* wrap2 */
+  .wrap2{
+    width: 90%;
+  }
+
+
+  /* wrap3 */
+  .wrap3{
+    width: 100%;
+    padding: 80px 30px;
+  }
+  .wrap3>.title {
+    width: 100%;
+  }
+
+  .wrap3>.graph{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+  }
+
+  .wrap3>.graph>img{
+    width: 100%;
+    height: auto;
+  }
+
+  .wrap3>.cardbox{
+    width: 100%;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .wrap3>.cardbox>.card{
+    width: 100%;
+    max-width: 200px;
+    max-height: 250px;
+  }
+
+
+  /* 푸터 */
+  .footer{
+    padding: 40px 30px;
+  }
+
+  .footer>.top{
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .footer>.top>.logo img{
+    width: 150px;
+    height: 150px;
+  }
+
+}
+
+/* << 900px 미만일때 >> */
+@media screen and (max-width:899px){
+
+  /* 헤더 */
+  header{
+    padding: 15px 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  #logo>a>img{
+    width: 80px;
+    height: 80px;
+  }
+
+  .nav>ul{
+    flex-wrap: wrap;
+  }
+
+  .nav>ul>li{
+    padding: 0 8px;
+    line-height: 40px;
+    font-size: 13px;
+  }
+
+
+  /* wrap1 */
+  .wrap1{
+    padding: 60px 20px;
+  }
+
+  .wrap1>.title>h1{
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .wrap1>.container{
+    flex-direction: column;
+  }
+
+  .wrap1>.container>.left,
+  .wrap1>.container>.right{
+    width: 100%;
+  }
+
+  .wrap1>.container>.right{
+    padding: 40px 30px;
+  }
+
+  .wrap1>.container>.right>.imgbox{
+    gap: 20px;
+  }
+
+
+  /* wrap2 */
+  .wrap2{
+    flex-direction: column;
+    padding: 60px 20px;
+  }
+
+  .wrap2>.left-t,
+  .wrap2>.right-t{
+    width: 100%;
+  }
+
+
+  /* wrap3 */
+  .wrap3{
+    padding: 60px 20px;
+  }
+
+  .wrap3>.title>h3{
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  .wrap3>.graph{
+    padding: 30px 20px;
+  }
+
+  .wrap3>.cardbox{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wrap3>.cardbox>.card{
+    max-width: 500px;
+  }
+
+
+  /* 푸터 */
+  .footer{
+    padding: 40px 20px;
+  }
+
+  .footer>.top{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer>.bot{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+}
+
+
+
+/* << 680px 미만일때 >> */
+@media screen and (max-width:679px){
+
+  .wrap1>.title>h1{
+    font-size: 22px;
+  }
+
+  .wrap1>.container>.left>.left-top{
+    padding: 30px 20px;
+  }
+
+  .wrap1>.container>.left>.left-top>.top-box{
+    gap: 20px;
+  }
+
+  .wrap1>.container>.left>.left-top>.top-box>.top-text>h1{
+    font-size: 40px;
+  }
+
+  .wrap1>.container>.right{
+    padding: 30px 20px;
+  }
+
+  .wrap2>.left-t>.title{
+    gap: 10px;
+  }
+
+  .wrap2>.left-t>.title>h2,
+  .wrap2>.right-t>h2{
+    font-size: 20px;
+  }
+
+  .wrap3>.graph>h2{
+    font-size: 20px;
+  }
+
+  .wrap3>.cardbox>.card{
+    padding: 30px 20px;
+  }
+
+}

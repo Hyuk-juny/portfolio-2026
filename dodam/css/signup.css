@@ -182,3 +182,118 @@ span {
 .wrap4>a:hover {
   font-weight: bold;
 }
+/*
+   반응형 미디어 쿼리 
+   ============================================ */
+
+/* << 1200px 미만일때 >> */
+
+@media screen and (max-width:1199px) {
+  /* 헤더 (기존 sub01 방식 적용) */
+  header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    border-bottom: 1px solid;
+  }
+  header::after { display: none; } /* 반응형에서 보더 라인 꼬임 방지 */
+  
+  #logo>a>img {
+    width: 100px;
+    height: 100px;
+    float: none;
+  }
+  .nav>ul {
+    width: auto;
+    height: auto;
+    float: none;
+    display: flex;
+  }
+  .nav>ul>li {
+    padding: 0 15px;
+    line-height: 60px;
+    float: none;
+    font-size: 14px;
+  }
+
+  /* 회원가입 컨텐츠 공통 너비 조정 */
+  .title, .wrap1, .wrap2, .wrap3, .wrap4 {
+    width: 90%; /* 570px 대신 비율로 변경 */
+    max-width: 570px;
+  }
+}
+
+/* << 900px 미만일때 >> */
+@media screen and (max-width:899px) {
+  /* 헤더 */
+  header {
+    padding: 15px 20px;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  #logo>a>img {
+    width: 80px;
+    height: 80px;
+  }
+  .nav>ul>li {
+    padding: 0 8px;
+    line-height: 40px;
+    font-size: 13px;
+  }
+
+  /* 입력창 및 타이틀 */
+  .title h1 { font-size: 24px; }
+  .wrap1>input[type=text],
+  .wrap1>input[type=password],
+  .wrap2>input[type=text] {
+    width: 100%; /* 가로 스크롤 방지를 위해 100%로 지정 */
+    height: 44px;
+    font-size: 14px;
+  }
+  
+  .box1 h2 { font-size: 18px; }
+  .wrap4 > input[type=submit] { height: 50px; font-size: 18px; }
+}
+
+/* << 680px 미만일때 >> */
+@media screen and (max-width:679px) {
+  .title { margin: 30px auto; }
+  .title p { font-size: 14px; }
+  
+  /* 약관 동의 영역 상세 보기 링크 위치 조정 */
+  .wrap3 > .cbox > a {
+    position: static; /* 좁은 화면에서 겹치지 않게 줄바꿈 허용 */
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 28px;
+    font-size: 12px;
+  }
+  
+  .wrap2 > p { margin-bottom: 50px; } /* 하단 여백 축소 */
+}
+
+/* << 540px 미만일때 >> */
+@media screen and (max-width:539px) {
+  /* 헤더 */
+  #logo>a>img {
+    width: 65px;
+    height: 65px;
+  }
+  .nav>ul>li {
+    padding: 0 4px;
+    font-size: 11px;
+    line-height: 32px;
+  }
+
+  /* 가입 폼 */
+  .title h1 { font-size: 20px; }
+  .wrap1, .wrap2, .wrap3 { margin: 20px auto; }
+  .wrap1 h2, .wrap2 h2, .wrap3 h2 { font-size: 16px; }
+  
+  /* 체크박스 레이블 폰트 크기 조정 */
+  .wrap3 label { font-size: 13px; }
+  .wrap4 p { font-size: 13px; }
+}

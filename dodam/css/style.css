@@ -9,6 +9,8 @@ body {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 a {
   text-decoration: none;
@@ -19,19 +21,22 @@ ul {
 }
 /*헤더 영역*/
 header {
-  width: 1170px;
-  height: 150px;
+  max-width: 1170px;
+  width: 100%;
   margin: 0 auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
 }
 #logo>a>img {
-  width: 150px;
-  height: 150px;
-  float: left;
+  width: 120px;
+  height: auto;
 }
 .nav>ul {
-  width: 600px;
-  height: 150px;
-  float: right;
+  display: flex;
+  gap: 20px;
 }
 .nav>ul>li {
   padding: 0 30px;
@@ -87,13 +92,13 @@ header>.nav>ul>li>a:hover {
   justify-content: center;
 }
 .container1 {
-  width: 1170px;
-  height: 500px;
+  max-width: 1170px;
+  width: 100%;
   display: flex;
   flex-flow: row;
 }
 .box1 {
-  width: 500px;
+  width: 100%;
   height: 500px;
   background-color: #3d3d3d;
   display: flex;
@@ -101,16 +106,13 @@ header>.nav>ul>li>a:hover {
   align-items: center;     /* 좌우 가운데 */
   justify-content: center; /* 상하 가운데 */
 }
-.box1>img {
-  width: 300px;
-  height: 300px;
-}
 .box1>p {
   color: #fff;
   font-size: 14px;
 }
 .arrow {
-  width: 150px;
+  max-width: 150px;
+  width: 100%;
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -118,17 +120,13 @@ header>.nav>ul>li>a:hover {
   justify-content: center;
 }
 .box2 {
-  width: 500px;
+  width: 100%;
   height: 500px;
   background-color: #F9F2E8;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-.box2>img {
-  width: 300px;
-  height: 300px;
 }
 .box2>p {
   font-size: 14px;
@@ -142,7 +140,8 @@ header>.nav>ul>li>a:hover {
   justify-content: center;
 }
 .container2 {
-  width: 1170px;
+  max-width: 1170px;
+  width: 100%;
   height: 500px;
   text-align: center;
   display: flex;
@@ -154,23 +153,20 @@ header>.nav>ul>li>a:hover {
   line-height: 100px;
 }
 .icon-wrapper {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 50px;
 }
 .iconbox {
-  width: 350px;
+  width: 100%;
   height: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-bottom: 50px;
-}
-.iconbox>img {
-  width: 200px;
-  height: 200px;
 }
 .iconbox>p {
   font-size: 14px;
@@ -192,7 +188,8 @@ header>.nav>ul>li>a:hover {
   margin: 50px;
 }
 .container3 {
-  width: 1170px;
+  max-width: 1170px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -200,8 +197,7 @@ header>.nav>ul>li>a:hover {
   gap: 170px;
 }
 .container3 > img {
-  width: 500px;
-  height: 500px;
+  max-width: 100%;
   border-radius: 20px;
 }
 .textbox {
@@ -232,7 +228,8 @@ header>.nav>ul>li>a:hover {
 
 /*사용자 리뷰 카드*/
 .section5 {
-  width: 1170px;
+  max-width: 1170px;
+  width: 100%;
   height: 700px;
   margin: 0 auto;
 }
@@ -248,7 +245,7 @@ header>.nav>ul>li>a:hover {
   gap: 50px;
 }
 .card {
-  width: 350px;
+  width: 100%;
   height: 400px;
   padding: 20px;
   border: 1px solid #dadada;
@@ -275,7 +272,8 @@ header>.nav>ul>li>a:hover {
 
 /*이용자수, 성장률 그래프*/
 .section6 {
-  width: 1170px;
+  max-width: 1170px;
+  width: 100%;
   height: 700px;
   margin: 0 auto;
 }
@@ -293,12 +291,13 @@ header>.nav>ul>li>a:hover {
 
 /*서비스 혁신 미래 이미지 3개, 텍스트*/
 .section7 {
-  width: 1170px;
+  max-width: 1170px;
+  width: 100%;
   height: 1400px;
   margin: 0 auto;
 }
 .section7>.title {
-  width: 1170px;
+  width: 100%;
   height: 300px;
   text-align: center;
   display: flex;
@@ -311,7 +310,8 @@ header>.nav>ul>li>a:hover {
   color: #b8b8b8;
 }
 .section7>.imgbox {
-  width: 1170px;
+  max-width: 1170px;
+  width: 100%;
   height: 300px;
   display: flex;
   justify-content: center;
@@ -319,8 +319,8 @@ header>.nav>ul>li>a:hover {
   margin-top: 50px;
 }
 .section7>.imgbox>img {
-  width: 300px;
-  height: 300px;
+  max-width: 300px;
+  width: 100%;
   border-radius: 30px;
   object-fit: cover;
   object-position: center;
@@ -346,8 +346,6 @@ header>.nav>ul>li>a:hover {
   background-color: #323232;
 }
 .section8>img {
-  width: 1170px;
-  height: 600px;
   margin: 0 auto;
   object-fit: cover;
   object-position: center;
@@ -476,3 +474,776 @@ header>.nav>ul>li>a:hover {
   display: flex;
   gap: 10px;
 }
+
+/* ============================================
+   반응형 미디어 쿼리
+   ============================================ */
+/* << 1600px 미만일때 >> */
+@media screen and (max-width:1599px) {
+  .section9>.mid>.card-wrap>.card-m {
+    width: 70%;
+  }
+  .section9>.mid>.card-wrap>.card-m>p {
+    font-size: 12px;
+  }
+}
+
+/* << 1200px 미만일때 >> */
+@media screen and (max-width:1199px) {
+ 
+  /* 헤더 */
+  header {
+    padding: 15px 30px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .nav>ul>li {
+    padding: 0 10px;
+    line-height: 60px;
+    font-size: 14px;
+  }
+ 
+  /* section1 */
+  .section1 {
+    height: 500px;
+  }
+  .section1>.title1>h1 {
+    font-size: 24px;
+  }
+  .section1>.title1>h2 {
+    font-size: 16px;
+  }
+ 
+  /* section2 */
+  .container1 {
+    justify-content: center;
+    gap: 20px;
+  }
+  .box1, .box2 {
+    width: 450px;
+  }
+  .box1>img, .box2>img {
+    max-width: 200px;
+  }
+ 
+  /* section3 */
+  .container2 {
+    height: auto;
+  }
+  .container2>h2 {
+    height: auto;
+    line-height: 1.4;
+    margin-bottom: 50px;
+    font-size: 20px;
+  }
+  .icon-wrapper {
+    gap: 20px;
+  }
+  .iconbox {
+    height: auto;
+    padding: 20px 10px;
+  }
+  .iconbox>img {
+    max-width: 150px;
+  }
+  .iconbox>h3 {
+    font-size: 15px;
+  }
+ 
+  /* section4 */
+  .section4 {
+    height: auto;
+    padding: 0 0 60px;
+  }
+  .section4>h2 {
+    height: auto;
+    line-height: 1.4;
+    margin: 40px 30px;
+    font-size: 22px;
+  }
+  .container3 {
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 30px;
+  }
+  .container3>img {
+    max-width: 600px;
+    width: 100%;
+  }
+  .textbox {
+    width: 100%;
+    height: auto;
+  }
+  .textbox>p {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+ 
+  /* section5 */
+  .section5 {
+    height: auto;
+    padding: 0 30px 60px;
+  }
+  .section5>h2 {
+    height: auto;
+    line-height: 1.4;
+    padding: 50px 0 30px;
+    font-size: 20px;
+  }
+  .cardbox {
+    gap: 20px;
+  }
+  .card {
+    height: auto;
+    min-height: 350px;
+    padding: 20px 15px;
+  }
+ 
+  /* section6 */
+  .section6 {
+    height: auto;
+    padding: 40px 30px;
+  }
+  .section6>img {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+  }
+ 
+  /* section7 */
+  .section7 {
+    height: auto;
+    padding: 40px 30px;
+  }
+  .section7>.title {
+    height: auto;
+    padding: 40px 0;
+  }
+  .section7>.title>h2 {
+    font-size: 22px;
+  }
+  .section7>.imgbox {
+    padding-left: 15%;
+  }
+  .section7>.imgbox>img {
+    max-width: 250px;
+    max-height: 250px;
+  }
+  .section7>.imgbox>.text {
+    width: auto;
+    flex: 1;
+  }
+ 
+  /* section8 */
+  .section8>h2 {
+    font-size: 20px;
+  }
+ 
+  /* section9 */
+  .section9 {
+    height: auto;
+    padding: 60px 30px;
+  }
+  .section9>.title {
+    height: auto;
+    padding: 40px 0;
+  }
+  .section9>.mid {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .section9>.mid>h2 {
+    margin-bottom: 40px;
+  }
+  .card-wrap {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .card-m {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+ 
+  /* 푸터 */
+  .footer {
+    padding: 40px 30px;
+  }
+  .footer>.top {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .footer>.top>.logo img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* << 900px 미만일때 >> */
+@media screen and (max-width:899px) {
+ 
+  /* 헤더 */
+  header {
+    width: 100%;
+  }
+  .nav>ul {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .nav>ul>li {
+    padding: 0 8px;
+    line-height: 44px;
+    font-size: 13px;
+  }
+ 
+  /* section1 */
+  .section1 {
+    height: 420px;
+    background-position: center;
+  }
+  .section1>.title1>h1 {
+    font-size: 20px;
+    padding: 0 20px;
+  }
+  .section1>.title1>h2 {
+    font-size: 14px;
+  }
+  .section1>.button {
+    bottom: 30px;
+  }
+ 
+  /* section2 */
+  .section2 {
+    padding: 30px 20px;
+    margin-top: 100px;
+  }
+  .container1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .box1, .box2 {
+    width: 100%;
+    height: 300px;
+  }
+  .arrow {
+    max-width: 100%;
+    width: 80px;
+    height: 60px;
+    transform: rotate(90deg);
+  }
+ 
+  /* section3 */
+  .section3 {
+    padding: 30px 20px;
+  }
+  .icon-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .iconbox {
+    width: 100%;
+    max-width: 550px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+    gap: 20px;
+    border: 1px solid #ebebeb;
+    border-radius: 16px;
+    text-align: left;
+  }
+  .iconbox>img {
+    max-width: 60px;
+    flex-shrink: 0;
+  }
+  .iconbox>br {
+    display: none;
+  }
+  .iconbox>div,
+  .iconbox>h3,
+  .iconbox>p {
+    text-align: left;
+  }
+ 
+  /* section4 */
+  .section4>h2 {
+    font-size: 20px;
+    margin: 30px 20px;
+  }
+  .container3 {
+    padding: 0 20px;
+    gap: 30px;
+  }
+  .textbox>p {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+ 
+  /* section5 */
+  .section5 {
+    padding: 0 20px 50px;
+  }
+  .section5>h2 {
+    font-size: 17px;
+    padding: 40px 0 20px;
+  }
+  .cardbox {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .card {
+    max-width: 480px;
+    width: 100%;
+    min-height: auto;
+  }
+ 
+  /* section6 */
+  .section6 {
+    padding: 30px 20px;
+  }
+  .section6>.title>h2 {
+    font-size: 18px;
+  }
+ 
+  /* section7 */
+  .section7 {
+    padding: 30px 20px;
+  }
+  .section7>.title>h2 {
+    font-size: 20px;
+  }
+  .section7>.imgbox {
+    flex-direction: column;
+    align-items: start;
+    height: auto;
+    gap: 20px;
+  }
+  .section7>.imgbox>img {
+    max-width: 80%;
+    height: 220px;
+  }
+  .section7>.imgbox>.text {
+    width: 100%;
+  }
+ 
+  /* section9 */
+  .section9 {
+    padding: 50px 20px;
+  }
+  .section9>.title>h3 {
+    font-size: 18px;
+  }
+  .card-m {
+    max-width: 100%;
+  }
+ 
+  /* 푸터 */
+  .footer {
+    padding: 40px 20px;
+  }
+  .footer>.top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .footer>.top>.logo img {
+    width: 120px;
+    height: 120px;
+  }
+  .footer>.bot {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .footer>.top>.text2>ul>li:nth-child(1) {
+    font-size: 26px;
+  }
+}
+
+/* << 680px 미만일때 >> */
+@media screen and (max-width:679px) {
+ 
+  /* 헤더 */
+  .nav>ul {
+    gap: 0;
+  }
+  .nav>ul>li {
+    padding: 0 6px;
+    font-size: 12px;
+    line-height: 40px;
+  }
+ 
+  /* section1 */
+  .section1 {
+    height: 380px;
+  }
+  .section1>.title1>h1 {
+    font-size: 17px;
+  }
+  .section1>.title1>h2 {
+    font-size: 13px;
+  }
+ 
+  /* section2 */
+  .box1, .box2 {
+    height: 260px;
+  }
+  .box1>p, .box2>p {
+    font-size: 12px;
+    text-align: center;
+    padding: 0 10px;
+  }
+ 
+  /* section3 */
+  .container2>h2 {
+    font-size: 17px;
+  }
+  .iconbox {
+    padding: 16px;
+    gap: 15px;
+  }
+  .iconbox>img {
+    max-width: 50px;
+  }
+  .iconbox>h3 {
+    font-size: 14px;
+  }
+ 
+  /* section4 */
+  .section4>h2 {
+    font-size: 17px;
+    margin: 20px 15px;
+  }
+  .container3 {
+    padding: 0 15px;
+  }
+  .textbox>p {
+    font-size: 13px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  .textbox>button {
+    width: 150px;
+  }
+ 
+  /* section5 */
+  .section5>h2 {
+    font-size: 15px;
+  }
+  .card {
+    padding: 20px 10px;
+    gap: 8px;
+  }
+  .cardbox>.card>h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .cardbox>.card>p {
+    font-size: 12px;
+  }
+ 
+  /* section6 */
+  .section6>.title>h2 {
+    font-size: 15px;
+  }
+  .section6>.title>p {
+    font-size: 12px;
+  }
+ 
+  /* section7 */
+  .section7>.title>h2 {
+    font-size: 17px;
+  }
+  .section7>.title>p {
+    font-size: 12px;
+  }
+  .section7>.imgbox>img {
+    height: 180px;
+    border-radius: 16px;
+  }
+  .section7>.imgbox>.text>h3 {
+    font-size: 16px;
+  }
+ 
+  /* section8 */
+  .section8>h2 {
+    font-size: 16px;
+    height: 100px;
+    line-height: 100px;
+  }
+ 
+  /* section9 */
+  .section9>.title>h3 {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .section9>.title>p {
+    font-size: 12px;
+  }
+  .section9>.mid>h2 {
+    font-size: 18px;
+  }
+  .card-m {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+  .card-m>h4 {
+    font-size: 15px;
+  }
+  .card-m>p {
+    font-size: 12px;
+  }
+ 
+  /* 푸터 */
+  .footer {
+    padding: 30px 15px;
+  }
+  .footer>.top>.logo img {
+    width: 100px;
+    height: 100px;
+  }
+  .footer>.top>.text2>ul>li:nth-child(1) {
+    font-size: 22px;
+  }
+  .footer>.top>.text2>ul>li:nth-child(2) {
+    font-size: 14px;
+  }
+  .footer>.bot>.appicon>.appimg {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+/* << 540px 미만일때 >> */
+@media screen and (max-width:539px) {
+ 
+  /* 헤더 */
+  header {
+    padding: 12px 15px;
+  }
+  #logo>a>img {
+    width: 90px;
+  }
+  .nav>ul {
+    flex-wrap: wrap;
+  }
+  .nav>ul>li {
+    padding: 0 4px;
+    font-size: 11px;
+    line-height: 36px;
+  }
+ 
+  /* section1 */
+  .section1 {
+    height: 320px;
+  }
+  .section1>.title1>h1 {
+    font-size: 15px;
+    padding: 0 15px;
+  }
+  .section1>.title1>h2 {
+    font-size: 12px;
+  }
+  .section1>.button {
+    bottom: 20px;
+  }
+  .section1>.button>button {
+    width: 100px;
+    font-size: 12px;
+    margin: 0 20px;
+  }
+ 
+  /* section2 */
+  .section2 {
+    padding: 20px 15px;
+  }
+  .box1, .box2 {
+    height: 220px;
+  }
+  .box1>img, .box2>img {
+    max-width: 70px;
+  }
+  .box1>p, .box2>p {
+    font-size: 11px;
+    padding: 0 8px;
+  }
+  .arrow {
+    width: 60px;
+  }
+ 
+  /* section3 */
+  .section3 {
+    padding: 20px 15px;
+  }
+  .container2>h2 {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .iconbox {
+    padding: 12px;
+    gap: 12px;
+  }
+  .iconbox>img {
+    max-width: 42px;
+  }
+  .iconbox>h3 {
+    font-size: 13px;
+  }
+  .iconbox>p {
+    font-size: 12px;
+  }
+ 
+  /* section4 */
+  .section4>h2 {
+    font-size: 15px;
+    margin: 15px;
+  }
+  .container3 {
+    padding: 0 15px;
+    gap: 20px;
+  }
+  .textbox>p {
+    font-size: 12px;
+  }
+  .textbox>button {
+    width: 130px;
+    height: 36px;
+    font-size: 12px;
+  }
+ 
+  /* section5 */
+  .section5 {
+    padding: 0 15px 40px;
+  }
+  .section5>h2 {
+    font-size: 14px;
+    padding: 30px 0 15px;
+    word-break: keep-all;
+  }
+  .card {
+    max-width: 100%;
+    padding: 15px 10px;
+  }
+  .cardbox>.card>h3 {
+    font-size: 13px;
+  }
+ 
+  /* section6 */
+  .section6 {
+    padding: 20px 15px;
+  }
+  .section6>.title>h2 {
+    font-size: 14px;
+    word-break: keep-all;
+  }
+  .section6>.title>p {
+    font-size: 11px;
+  }
+ 
+  /* section7 */
+  .section7 {
+    padding: 20px 15px;
+  }
+  .section7>.title {
+    padding: 30px 0;
+  }
+  .section7>.title>h2 {
+    font-size: 15px;
+  }
+  .section7>.imgbox {
+    margin-top: 15px;
+    gap: 15px;
+  }
+  .section7>.imgbox>img {
+    height: 160px;
+    border-radius: 12px;
+  }
+  .section7>.imgbox>.text>h3 {
+    font-size: 14px;
+  }
+  .section7>.imgbox>.text>p {
+    font-size: 12px;
+  }
+ 
+  /* section8 */
+  .section8>h2 {
+    font-size: 14px;
+    height: 80px;
+    line-height: 80px;
+  }
+ 
+  /* section9 */
+  .section9 {
+    padding: 40px 15px;
+  }
+  .section9>.title>h3 {
+    font-size: 14px;
+  }
+  .section9>.title>p {
+    font-size: 11px;
+  }
+  .section9>.mid {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .section9>.mid>h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .card-wrap {
+    gap: 12px;
+    margin-top: 10px;
+  }
+  .card-m {
+    padding: 15px;
+    border-radius: 14px;
+  }
+  .card-m>h4 {
+    font-size: 13px;
+  }
+  .card-m>p {
+    font-size: 11px;
+    margin-top: 10px;
+  }
+ 
+  /* 푸터 */
+  .footer {
+    padding: 25px 15px;
+  }
+  .footer>.top {
+    gap: 20px;
+    padding-bottom: 25px;
+  }
+  .footer>.top>.logo img {
+    width: 80px;
+    height: 80px;
+  }
+  .footer>.top>.logo>p {
+    font-size: 12px;
+  }
+  .footer>.top>.text1>ul>li {
+    font-size: 12px;
+  }
+  .footer>.top>.text2>ul>li:nth-child(1) {
+    font-size: 20px;
+  }
+  .footer>.top>.text2>ul>li:nth-child(2) {
+    font-size: 13px;
+  }
+  .footer>.top>.text2>ul>li:nth-child(3) {
+    font-size: 12px;
+  }
+  .footer>.bot>.text3>ul>li {
+    font-size: 11px;
+  }
+  .footer>.bot>.appicon>h3 {
+    font-size: 13px;
+  }
+}
+ 

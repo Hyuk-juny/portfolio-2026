@@ -46,10 +46,11 @@ header>.nav>ul>li>a:hover {
 
 /*메인이미지, 메인 이미지위 텍스트, 버튼*/
 .main {
-  width: 1920px;
+  max-width: 100%;
   height: 1080px;
   background-image: url(../img/sub01/mainhero.png);
   background-size: cover;
+  overflow: hidden;
 }
 .main>.textbox {
   height: 1080px;
@@ -133,6 +134,7 @@ header>.nav>ul>li>a:hover {
   flex-direction: column;
   justify-content: center;
   margin-bottom: 100px;
+  width: 100%;
 }
 .textbox>.textbox1 {
   margin-bottom: 50px;
@@ -167,10 +169,10 @@ header>.nav>ul>li>a:hover {
   text-align: center;
 }
 .cardbox {
-  width: 1400px;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
 }
 .cardbox>.card {
   width: 430px;
@@ -214,6 +216,9 @@ background-color: #f2f2f2;
   display: flex;
   justify-content: center;
   gap: 100px;
+}
+.box>.textbox {
+  width: 30%;
 }
 .box>.textbox>h3 {
   color: #ff4400;
@@ -300,4 +305,699 @@ background-color: #f2f2f2;
 .footer>.bot>.appicon>.appimg {
   display: flex;
   gap: 10px;
+}
+
+/* ============================================
+   반응형 미디어 쿼리
+   ============================================ */
+
+/* << 1600px 미만일때 >> */
+@media screen and (max-width:1599px) {
+  .wrap3 {
+    height: auto;
+    padding-bottom: 200px;
+  }
+  .wrap3>.cardbox {
+    justify-content: center;
+    gap: 50px;
+  }
+  .wrap3>.cardbox>.card {
+    display: flex;
+    justify-content: center;
+    max-width: 330px;
+    max-height: 550px;
+  }
+}
+
+/* << 1200px 미만일때 >> */
+@media screen and (max-width:1199px) {
+ 
+  /* 헤더 */
+  header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+  }
+  #logo>a>img {
+    width: 100px;
+    height: 100px;
+    float: none;
+  }
+  .nav>ul {
+    width: auto;
+    height: auto;
+    float: none;
+    display: flex;
+  }
+  .nav>ul>li {
+    padding: 0 15px;
+    line-height: 60px;
+    float: none;
+    font-size: 14px;
+  }
+ 
+  /* 메인 */
+  .main {
+    height: 800px;
+  }
+  .main>.textbox {
+    height: 800px;
+    padding-left: 60px;
+    padding-right: 40px;
+  }
+  .main>.textbox>p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .main>.textbox>h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .main>.textbox>p:nth-child(4) {
+    font-size: 16px;
+  }
+  .main>.textbox>a {
+    width: 220px;
+    margin-top: 30px;
+  }
+ 
+  /* wrap1 */
+  .wrap1 {
+    padding: 70px 0;
+  }
+  .wrap1>.container1 {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .wrap1>.container1>.imgbox {
+    gap: 30px;
+  }
+  .wrap1>.container1>.imgbox>img {
+    width: 45%;
+    height: auto;
+    flex-shrink: 0;
+  }
+  .wrap1>.container1>.imgbox>.textbox>h1 {
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+ 
+  /* wrap2 */
+  .wrap2>h2 {
+    margin: 60px 0;
+    font-size: 22px;
+  }
+  .wrap2>.container2 {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .wrap2>.container2>.iconbox {
+    gap: 20px;
+  }
+  .iconbox>img {
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+  }
+  .textbox>.textbox1>.textbox1-1>h3 {
+    font-size: 15px;
+  }
+  .textbox2>ul>li {
+    font-size: 13px;
+  }
+ 
+  /* wrap3 */
+  .wrap3 {
+    height: auto;
+    padding-bottom: 80px;
+  }
+  .wrap3>h1 {
+    font-size: 22px;
+    height: auto;
+    line-height: 1.4;
+    margin: 0;
+    padding: 80px 30px 60px;
+  }
+  .cardbox {
+    width: 100%;
+    padding: 0 30px;
+    gap: 20px;
+  }
+  .cardbox>.card {
+    width: 100%;
+    height: auto;
+    padding: 40px 20px;
+    border-radius: 30px;
+  }
+  .cardbox>.card>.top {
+    margin-bottom: 40px;
+  }
+ 
+  /* wrap4 */
+  .wrap4 {
+    height: auto;
+    padding-bottom: 60px;
+  }
+  .wrap4>.title>h2 {
+    margin-top: 60px;
+    font-size: 20px;
+    padding: 0 30px;
+  }
+  .wrap4>.title>p {
+    font-size: 14px;
+    padding: 0 30px;
+  }
+  .box {
+    gap: 50px;
+    padding: 0 30px;
+  }
+  .box>img {
+    max-width: 40%;
+    height: auto;
+  }
+ 
+  /* 푸터 */
+  .footer {
+    padding: 40px 30px;
+  }
+  .footer>.top {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .footer>.top>.logo img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* << 900px 미만일때 >> */
+@media screen and (max-width:899px) {
+ 
+  /* 헤더 */
+  header {
+    padding: 15px 20px;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  #logo>a>img {
+    width: 80px;
+    height: 80px;
+  }
+  .nav>ul {
+    flex-wrap: wrap;
+  }
+  .nav>ul>li {
+    padding: 0 8px;
+    line-height: 40px;
+    font-size: 13px;
+  }
+ 
+  /* 메인 */
+  .main {
+    height: 650px;
+  }
+  .main>.textbox {
+    height: 650px;
+    padding-left: 40px;
+    padding-right: 30px;
+  }
+  .main>.textbox>p {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  .main>.textbox>h1 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .main>.textbox>p:nth-child(4) {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+  .main>.textbox>a {
+    width: 200px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 14px;
+    margin-top: 25px;
+  }
+ 
+  /* wrap1 */
+  .wrap1 {
+    padding: 50px 0;
+  }
+  .wrap1>.container1 {
+    padding: 0 20px;
+  }
+  .wrap1>.container1>.imgbox {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  .wrap1>.container1>.imgbox:nth-child(2) {
+    margin: 30px 0;
+  }
+  .wrap1>.container1>.imgbox>img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+  .wrap1>.container1>.imgbox>.textbox>h1 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .wrap1>.container1>.imgbox>.textbox {
+    margin-bottom: 0;
+  }
+ 
+  /* wrap2 */
+  .wrap2>h2 {
+    margin: 50px 0;
+    font-size: 20px;
+    padding: 0 20px;
+  }
+  .wrap2>.container2 {
+    padding: 0 20px;
+  }
+  .wrap2>.container2>.iconbox {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  .iconbox>img {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 20px;
+  }
+  .textbox {
+    margin-bottom: 60px;
+  }
+  .textbox>.textbox1 {
+    margin-bottom: 30px;
+  }
+  .textbox>.textbox1>p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .textbox2>ul>li {
+    font-size: 13px;
+    margin-bottom: 12px;
+    list-style: disc;
+    margin-left: 20px;
+  }
+ 
+  /* wrap3 */
+  .wrap3>h1 {
+    font-size: 18px;
+    padding: 60px 20px 50px;
+  }
+  .cardbox {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    gap: 20px;
+  }
+  .cardbox>.card {
+    width: 100%;
+    max-width: 500px;
+    padding: 40px 30px;
+    border-radius: 24px;
+  }
+  .cardbox>.card>.top {
+    margin-bottom: 30px;
+  }
+ 
+  /* wrap4 */
+  .wrap4>.title>h2 {
+    margin-top: 50px;
+    font-size: 18px;
+    padding: 0 20px;
+  }
+  .wrap4>.title>p {
+    padding: 0 20px;
+    font-size: 13px;
+  }
+  .box {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 0 20px;
+  }
+  .box>img {
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .box>.textbox {
+    width: 100%;
+    align-items: center;
+  }
+  .box>.textbox>ul {
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+ 
+  /* 푸터 */
+  .footer {
+    padding: 40px 20px;
+  }
+  .footer>.top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .footer>.top>.logo img {
+    width: 120px;
+    height: 120px;
+  }
+  .footer>.bot {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .footer>.top>.text2>ul>li:nth-child(1) {
+    font-size: 26px;
+  }
+}
+
+/* << 680px 미만일때 >> */
+@media screen and (max-width:679px) {
+ 
+  /* 헤더 */
+  .nav>ul>li {
+    padding: 0 6px;
+    font-size: 12px;
+    line-height: 36px;
+  }
+ 
+  /* 메인 */
+  .main {
+    height: 560px;
+  }
+  .main>.textbox {
+    height: 560px;
+    padding-left: 25px;
+    padding-right: 20px;
+  }
+  .main>.textbox>p {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  .main>.textbox>h1 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  .main>.textbox>p:nth-child(4) {
+    font-size: 12px;
+  }
+  .main>.textbox>a {
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+    margin-top: 20px;
+  }
+ 
+  /* wrap1 */
+  .wrap1>.container1>.imgbox>img {
+    height: 180px;
+    border-radius: 20px;
+  }
+  .wrap1>.container1>.imgbox>.textbox>h1 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .wrap1>.container1>.imgbox>.textbox>p {
+    font-size: 13px;
+  }
+ 
+  /* wrap2 */
+  .wrap2>h2 {
+    font-size: 17px;
+    margin: 40px 0;
+  }
+  .iconbox>img {
+    width: 120px;
+    height: 120px;
+  }
+  .textbox>.textbox1>.textbox1-1>h3 {
+    font-size: 14px;
+  }
+  .textbox>.textbox1>p {
+    font-size: 13px;
+  }
+  .textbox2>ul>li {
+    font-size: 12px;
+  }
+ 
+  /* wrap3 */
+  .wrap3>h1 {
+    font-size: 16px;
+    padding: 50px 15px 40px;
+  }
+  .cardbox {
+    padding: 0 15px;
+  }
+  .cardbox>.card {
+    padding: 30px 20px;
+    border-radius: 20px;
+  }
+  .cardbox>.card>.top>h3 {
+    font-size: 15px;
+  }
+  .cardbox>.card>.mid>p {
+    font-size: 13px;
+  }
+ 
+  /* wrap4 */
+  .wrap4>.title>h2 {
+    font-size: 16px;
+    margin-top: 40px;
+  }
+  .wrap4>.title>p {
+    font-size: 12px;
+  }
+  .box>.textbox>h3 {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .box>.textbox>ul {
+    margin-left: 20px;
+    font-size: 13px;
+  }
+  .box>.textbox>p {
+    font-size: 11px;
+  }
+ 
+  /* 푸터 */
+  .footer {
+    padding: 30px 15px;
+  }
+  .footer>.top>.logo img {
+    width: 100px;
+    height: 100px;
+  }
+  .footer>.top>.text2>ul>li:nth-child(1) {
+    font-size: 22px;
+  }
+  .footer>.top>.text2>ul>li:nth-child(2) {
+    font-size: 14px;
+  }
+}
+
+/* << 540px 미만일때 >> */
+@media screen and (max-width:539px) {
+ 
+  /* 헤더 */
+  header {
+    padding: 10px 15px;
+  }
+  #logo>a>img {
+    width: 65px;
+    height: 65px;
+  }
+  .nav>ul>li {
+    padding: 0 4px;
+    font-size: 11px;
+    line-height: 32px;
+  }
+ 
+  /* 메인 */
+  .main {
+    height: 480px;
+  }
+  .main>.textbox {
+    height: 480px;
+    padding-left: 20px;
+    padding-right: 15px;
+  }
+  .main>.textbox>p {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+  .main>.textbox>h1 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .main>.textbox>p:nth-child(4) {
+    font-size: 11px;
+    line-height: 1.6;
+  }
+  .main>.textbox>a {
+    width: 160px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 12px;
+    margin-top: 15px;
+  }
+ 
+  /* wrap1 */
+  .wrap1 {
+    padding: 40px 0;
+  }
+  .wrap1>.container1 {
+    padding: 0 15px;
+  }
+  .wrap1>.container1>.imgbox>img {
+    height: 150px;
+    border-radius: 14px;
+  }
+  .wrap1>.container1>.imgbox>.textbox>h1 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .wrap1>.container1>.imgbox>.textbox>p {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  .wrap1>.container1>.imgbox:nth-child(2) {
+    margin: 20px 0;
+  }
+ 
+  /* wrap2 */
+  .wrap2>h2 {
+    font-size: 15px;
+    margin: 30px 0;
+    padding: 0 15px;
+  }
+  .wrap2>.container2 {
+    padding: 0 15px;
+  }
+  .iconbox>img {
+    width: 90px;
+    height: 90px;
+  }
+  .textbox {
+    margin-bottom: 40px;
+  }
+  .textbox>.textbox1>.textbox1-1>h3 {
+    font-size: 13px;
+  }
+  .textbox>.textbox1>p {
+    font-size: 12px;
+  }
+  .textbox2>ul>li {
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+ 
+  /* wrap3 */
+  .wrap3>h1 {
+    font-size: 14px;
+    padding: 40px 15px 30px;
+  }
+  .cardbox {
+    padding: 0 15px;
+    gap: 15px;
+  }
+  .cardbox>.card {
+    padding: 25px 15px;
+    border-radius: 16px;
+  }
+  .cardbox>.card>.top {
+    margin-bottom: 20px;
+  }
+  .cardbox>.card>.top>img {
+    max-width: 60px;
+    margin: 0 auto 10px;
+  }
+  .cardbox>.card>.top>h3 {
+    font-size: 14px;
+  }
+  .cardbox>.card>.top>p {
+    font-size: 12px;
+  }
+  .cardbox>.card>.mid>p {
+    font-size: 12px;
+    line-height: 1.7;
+  }
+ 
+  /* wrap4 */
+  .wrap4>.title>h2 {
+    font-size: 14px;
+    margin-top: 30px;
+    padding: 0 15px;
+    word-break: keep-all;
+  }
+  .wrap4>.title>p {
+    font-size: 11px;
+    padding: 0 15px;
+  }
+  .box {
+    padding: 0 15px;
+    gap: 20px;
+  }
+  .box>img {
+    max-width: 100%;
+  }
+  .box>.textbox>h3 {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .box>.textbox>ul {
+    margin-left: 18px;
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+  .box>.textbox>p {
+    font-size: 10px;
+    line-height: 1.6;
+    word-break: keep-all;
+  }
+ 
+  /* 푸터 */
+  .footer {
+    padding: 25px 15px;
+  }
+  .footer>.top {
+    gap: 20px;
+    padding-bottom: 25px;
+  }
+  .footer>.top>.logo img {
+    width: 80px;
+    height: 80px;
+  }
+  .footer>.top>.logo>p {
+    font-size: 12px;
+  }
+  .footer>.top>.text1>ul>li {
+    font-size: 12px;
+  }
+  .footer>.top>.text2>ul>li:nth-child(1) {
+    font-size: 20px;
+  }
+  .footer>.top>.text2>ul>li:nth-child(2) {
+    font-size: 13px;
+  }
+  .footer>.top>.text2>ul>li:nth-child(3) {
+    font-size: 12px;
+  }
+  .footer>.bot>.text3>ul>li {
+    font-size: 11px;
+  }
+  .footer>.bot>.appicon>h3 {
+    font-size: 13px;
+  }
 }

@@ -105,13 +105,13 @@ header>.nav>ul>li>a:hover {
   height: 80px;
   line-height: 80px;
   font-size: 24px;
-  margin: 100px auto;
+  margin: 100px auto; 
   color: #ddd;
   border: 1px solid #979797;
   border-radius: 10px;
 }
 .wrap2>.cardbox {
-  width: 1170px;
+  max-width: 1170px;
   margin: 0 auto;
   display: flex;
   justify-content:space-between;
@@ -463,5 +463,471 @@ overflow: hidden;
 .footer>.bot>.appicon>.appimg {
   display: flex;
   gap: 10px;
+}
+
+/* ============================================
+   반응형 미디어 쿼리
+   ============================================ */
+
+/* << 1600px 미만일때 >> */
+@media screen and (max-width:1599px) {
+  header {
+    width: 80%;
+  }
+}
+
+/* << 1200px 미만일때 >> */
+@media screen and (max-width:1199px){
+
+  header{
+    width: 100%;
+    padding: 15px 30px;
+    height: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #logo>a>img{
+    width: 100px;
+    height: 100px;
+    float: none;
+  }
+
+  .nav>ul{
+    width: auto;
+    height: auto;
+    float: none;
+
+    display: flex;
+  }
+
+  .nav>ul>li{
+    float: none;
+    line-height: 60px;
+    padding: 0 15px;
+    font-size: 14px;
+  }
+
+
+  /* 메인 */
+  .wrap1{
+    height: 800px;
+  }
+
+  .wrap1>.textbox{
+    height: 800px;
+    padding-left: 100px;
+    padding-right: 30px;
+  }
+
+  .but{
+    margin-top: 60px;
+  }
+
+
+  /* wrap2 */
+  .wrap2{
+    height: auto;
+    padding-bottom: 100px;
+  }
+
+  .wrap2>.title1{
+    padding-top: 80px;
+  }
+
+  .wrap2>.title1>p:nth-child(3){
+    width: 300px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 18px;
+    margin: 70px auto;
+  }
+
+  .wrap2>.cardbox{
+    width: 100%;
+    padding: 0 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .wrap2>.title2>h2{
+    margin: 100px 0 60px;
+  }
+
+  .wrap2>.title2>.imgbox{
+    gap: 40px;
+    padding: 0 30px;
+  }
+
+  .wrap2>.title2>.imgbox>img{
+    width: 55%;
+    height: auto;
+  }
+
+
+  /* wrap3 */
+  .wrap3{
+    padding: 0 30px;
+  }
+
+  .wrap3>.title{
+    width: 100%;
+  }
+
+  .wrap3>.imgbox{
+    width: 100%;
+    align-items: center;
+  }
+
+  .wrap3>.imgbox>img{
+    width: 70%;
+    height: auto;
+  }
+
+  .wrap3>.bot{
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+  /* wrap4 */
+  .wrap4{
+    margin-bottom: 100px;
+    padding: 0 30px;
+  }
+
+  .wrap4>.title{
+    margin-bottom: 60px;
+  }
+
+  .wrap4>.cardbox{
+    width: 100%;
+    gap: 30px;
+  }
+
+  .wrap4>.cardbox>.card{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 50px 20px;
+  }
+
+
+  /* wrap5 */
+  .wrap5>.top,
+  .wrap5>.bot{
+    width: calc(100% - 60px);
+  }
+
+  .wrap5>.top>.iconbox{
+    gap: 80px;
+  }
+  .wrap5>.top>.iconbox>.icon>img {
+    width: 150px;
+  }
+  .wrap5>.bot>img{
+    width: 90%;
+    height: auto;
+  }
+
+
+  /* 푸터 */
+  .footer{
+    padding: 40px 30px;
+  }
+
+  .footer>.top{
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .footer>.top>.logo img{
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* << 900px 미만일때 >> */
+@media screen and (max-width:899px){
+
+  /* 헤더 */
+  header{
+    padding: 15px 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  #logo>a>img{
+    width: 80px;
+    height: 80px;
+  }
+
+  .nav>ul{
+    flex-wrap: wrap;
+  }
+
+  .nav>ul>li{
+    padding: 0 8px;
+    line-height: 40px;
+    font-size: 13px;
+  }
+
+
+  /* 메인 */
+  .wrap1{
+    height: 650px;
+  }
+
+  .wrap1>.textbox{
+    height: 650px;
+    padding-left: 40px;
+  }
+
+  .wrap1>.textbox>.title>h3{
+    font-size: 22px;
+  }
+
+  .wrap1>.textbox>.title>p{
+    font-size: 14px;
+  }
+
+  .but{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+
+  /* wrap2 */
+  .wrap2>.title1{
+    padding: 60px 20px 0;
+  }
+
+  .wrap2>.title1>p:nth-child(3){
+    width: 100%;
+    max-width: 280px;
+    font-size: 16px;
+  }
+
+  .wrap2>.title2>.imgbox{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wrap2>.title2>.imgbox>img{
+    width: 100%;
+  }
+
+  .wrap2>.title2>.imgbox>.text{
+    align-items: center;
+  }
+
+
+  /* wrap3 */
+  .wrap3>.title{
+    text-align: center;
+  }
+
+  .wrap3>.imgbox{
+    flex-direction: column;
+  }
+
+  .wrap3>.imgbox>img{
+    width: 100%;
+  }
+
+  .wrap3>.bot{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+
+  /* wrap4 */
+  .wrap4>.cardbox{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wrap4>.cardbox>.card>.imgbox{
+    gap: 20px;
+  }
+
+  .wrap4>.cardbox>.card>.imgbox>p{
+    font-size: 24px;
+  }
+
+
+  /* wrap5 */
+  .wrap5>.top,
+  .wrap5>.bot{
+    width: calc(100% - 40px);
+    margin: 60px auto;
+  }
+
+  .wrap5>.top>.iconbox{
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .wrap5>.top>.iconbox>.icon>img {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .wrap5>.bot>.textbox{
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    padding: 30px 20px;
+  }
+
+
+  /* 푸터 */
+  .footer{
+    padding: 40px 20px;
+  }
+
+  .footer>.top{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer>.bot{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+}
+
+/* << 680px 미만일때 >> */
+@media screen and (max-width:679px){
+
+  .wrap1{
+    height: 560px;
+  }
+
+  .wrap1>.textbox{
+    height: 560px;
+    padding: 0 20px;
+  }
+
+  .wrap1>.textbox>.title>h3{
+    font-size: 18px;
+  }
+
+  .wrap1>.textbox>.title>p{
+    font-size: 12px;
+  }
+
+  .but>button{
+    width: 160px !important;
+    height: 42px !important;
+    font-size: 13px !important;
+  }
+
+  .wrap2>.cardbox>.card{
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .wrap3>.title>h2,
+  .wrap4>.title>h1,
+  .wrap5 h1{
+    font-size: 20px;
+  }
+
+  .wrap4>.cardbox>.card>.textbox{
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .wrap4>.cardbox>.card>.textbox>.left{
+    border-right: none;
+    padding-right: 0;
+  }
+
+  .wrap4>.cardbox>.card>.textbox>.right{
+    padding-left: 0;
+  }
+
+}
+
+/* << 540px 미만일때 >> */
+@media screen and (max-width:539px){
+
+  header{
+    padding: 10px 15px;
+  }
+
+  #logo>a>img{
+    width: 65px;
+    height: 65px;
+  }
+
+  .nav>ul>li{
+    padding: 0 4px;
+    font-size: 11px;
+    line-height: 32px;
+  }
+
+  .wrap1{
+    height: 480px;
+  }
+
+  .wrap1>.textbox{
+    height: 480px;
+  }
+
+  .wrap1>.textbox>.title>h3{
+    font-size: 16px;
+  }
+
+  .wrap1>.textbox>.title>p{
+    font-size: 11px;
+    line-height: 1.6;
+  }
+
+  .wrap2>.title1>h2,
+  .wrap2>.title2>h2{
+    font-size: 18px;
+  }
+
+  .wrap2>.title1>p,
+  .wrap2>.title2 p{
+    font-size: 12px;
+  }
+
+  .wrap3>.title>p{
+    font-size: 13px;
+  }
+
+  .wrap4>.cardbox>.card{
+    border-radius: 20px;
+  }
+
+  .wrap4>.cardbox>.card>h2{
+    font-size: 18px;
+  }
+
+  .wrap5>.top,
+  .wrap5>.bot{
+    width: calc(100% - 30px);
+  }
+
+  .footer{
+    padding: 25px 15px;
+  }
+
+  .footer>.top>.logo img{
+    width: 80px;
+    height: 80px;
+  }
+
 }
 
