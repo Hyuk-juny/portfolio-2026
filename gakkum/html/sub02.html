@@ -11,7 +11,7 @@
 </head>
 <body>
   <!--헤더, 메인 영역-->
-  <section class="header">
+  <section class="header" id="top">
     <header>
     <div id="logo"><a href="../html/gaggum-main.html"><img src="../img/main/logo.png" alt="브랜드로고"></a></div>
     <div class="nav">
@@ -269,13 +269,12 @@
         </a>
       </div>
     </article>
-
-    <button type="button" class="scroll-top" id="scrollTop">▲</button>
-    <button type="button" class="scroll-bottom" id="scrollBottom">▼</button>
+    <a href="#top" class="scroll-top">▲</a>
+    <a href="#bottom" class="scroll-bottom">▼</a>
   </section>
 
   <!--푸터영역-->
-  <section class="f-top">
+  <section class="f-top" id="bottom">
     <div class="logo">
       <a href="../html/gaggum-main.html"><img src="../img/main/logo.png" alt="로고 이미지"></a>
     </div>
@@ -332,14 +331,11 @@
 
   <!--script-->
   <script>
-    window.addEventListener('scroll', () => {
-      const scrollY = window.scrollY;
-      const scrollTop = document.getElementById('scrollTop');
-      const scrollBottom = document.getElementById('scrollBottom');
-
-    scrollTop.style.transform = `translateY(${scrollY * 0.02}px)`;
-    scrollBottom.style.transform = `translateY(${scrollY * 0.02}px)`;
-  });
+  window.addEventListener('scroll', () => {
+  const scrollY = window.scrollY;
+  document.querySelector('.scroll-top').style.bottom = (50 - scrollY * 0.0005) + '%';
+  document.querySelector('.scroll-bottom').style.bottom = (43 - scrollY * 0.0005) + '%';
+});
   </script>
 </body>
 </html>

@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 html, body {
   font-family: 'Judson', serif;
   font-weight: 400;
@@ -347,6 +350,8 @@ header>.nav>ul>li>a:hover {
   font-size: 16px;
   opacity: 0.6;
   transition: opacity 0.3s, background 0.3s, transform 0.3s;
+  text-align: center;
+  line-height: 45px;
 }
 .scroll-top {
   bottom: 50%;
