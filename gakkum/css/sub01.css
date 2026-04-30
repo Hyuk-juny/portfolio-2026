@@ -370,3 +370,412 @@ header>.nav>ul>li>a:hover {
   font-size: 12px;
   margin-bottom: 50px;
 }
+
+/* =============================================
+   RESPONSIVE - 1200px (태블릿 가로)
+   ============================================= */
+@media (max-width: 1200px) {
+  /* 헤더 */
+  header {
+    gap: 200px;
+    height: 160px;
+  }
+  #logo>a>img {
+    width: 120px;
+    height: 80px;
+  }
+  .nav>ul {
+    width: 420px;
+    height: 100px;
+  }
+  .nav>ul>li {
+    padding: 0 16px;
+    line-height: 100px;
+  }
+ 
+  /* 메인 */
+  .main {
+    height: auto;
+    padding: 120px 60px;
+  }
+  .main>.text>h2 {
+    font-size: 22px;
+    margin-bottom: 60px;
+  }
+ 
+  /* values / creative / perfect / dream 공통 */
+  .values, .creative, .perfect, .dream {
+    height: auto;
+    padding: 80px 0;
+  }
+  .values>.container,
+  .creative>.container,
+  .perfect>.container,
+  .dream>.container {
+    height: auto;
+    gap: 40px;
+  }
+  .values>.container>.text {
+    padding-left: 80px;
+  }
+  .creative>.container>.text {
+    padding-right: 80px;
+  }
+  .perfect>.container>.text {
+    padding-left: 80px;
+  }
+  .dream>.container>.text {
+    padding-right: 80px;
+  }
+  .values>.container>.text>h1,
+  .creative>.container>.text>h1,
+  .perfect>.container>.text>h1,
+  .dream>.container>.text>h1 {
+    font-size: 38px;
+  }
+  .values>.container>.img>img,
+  .creative>.container>.img>img,
+  .perfect>.container>.img>img,
+  .dream>.container>.img>img {
+    width: 480px;
+    height: auto;
+  }
+ 
+  /* Philosophy */
+  .philosophy {
+    height: auto;
+    padding: 100px 40px;
+    gap: 80px;
+  }
+  .circle {
+    width: 260px;
+    height: 260px;
+  }
+  .circle>img {
+    width: 100px;
+    height: 100px;
+  }
+  .circle>h3,
+  .circle>p {
+    font-size: 14px;
+  }
+  /* 푸터 */
+  .f-top {
+    gap: 60px;
+    padding: 0 40px;
+  }
+  .f-top>.logo>a>img {
+    width: 120px;
+    height: auto;
+  }
+  .f-top>.menu {
+    height: auto;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .f-top>.menu>.quick>h3,
+  .f-top>.menu>.consultation>h3,
+  .f-top>.menu>.social>h3 {
+    width: 200px;
+  }
+}
+
+/* =============================================
+   RESPONSIVE - 768px (태블릿 세로)
+   ============================================= */
+@media (max-width: 768px) {
+  /* 헤더 */
+  header {
+    flex-direction: column;
+    gap: 0;
+    height: auto;
+    padding: 20px;
+  }
+  #logo>a>img {
+    width: 100px;
+    height: auto;
+  }
+  .nav>ul {
+    width: auto;
+    height: auto;
+    display: flex;
+    float: none;
+  }
+  .nav>ul>li {
+    line-height: 48px;
+    padding: 0 12px;
+    font-size: 14px;
+  }
+ 
+  /* 메인 */
+  .main {
+    height: auto;
+    padding: 80px 30px;
+  }
+  .main>.text>p:nth-child(1) {
+    margin-bottom: 30px;
+  }
+  .main>.text>h2 {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 50px;
+    word-break: keep-all;
+  }
+  .main>.text>p:nth-child(3) {
+    font-size: 13px;
+    word-break: keep-all;
+  }
+ 
+  /* values / creative / perfect / dream 공통: 세로 전환 */
+  .values, .creative, .perfect, .dream {
+    height: auto;
+    padding: 60px 0;
+  }
+  .values>.container,
+  .perfect>.container {
+    flex-direction: column;
+    height: auto;
+    gap: 40px;
+  }
+  .creative>.container,
+  .dream>.container {
+    flex-direction: column-reverse;
+    height: auto;
+    gap: 40px;
+  }
+  .values>.container>.text,
+  .perfect>.container>.text {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .creative>.container>.text,
+  .dream>.container>.text {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .values>.container>.text>h1,
+  .creative>.container>.text>h1,
+  .perfect>.container>.text>h1,
+  .dream>.container>.text>h1 {
+    font-size: 30px;
+  }
+  .values>.container>.text>p:nth-child(3),
+  .creative>.container>.text>p:nth-child(3),
+  .perfect>.container>.text>p:nth-child(3),
+  .dream>.container>.text>p:nth-child(3) {
+    word-break: keep-all;
+  }
+  .values>.container>.img>img,
+  .creative>.container>.img>img,
+  .perfect>.container>.img>img,
+  .dream>.container>.img>img {
+    width: 100%;
+    height: auto;
+  }
+ 
+  /* Philosophy */
+  .philosophy {
+    height: auto;
+    padding: 80px 30px;
+    gap: 60px;
+  }
+  .philosophy>.text>h2 {
+    font-size: 18px;
+    word-break: keep-all;
+    line-height: 1.8;
+    margin-bottom: 30px;
+  }
+  .philosophy>.text>p {
+    word-break: keep-all;
+    line-height: 1.8;
+  }
+  .circlebox {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .circle {
+    width: 280px;
+    height: 280px;
+  }
+  /* 화살표 세로 방향 */
+  .circlebox>.arrow {
+    flex-direction: column;
+  }
+  .circlebox>.arrow>span {
+    transform: rotate(90deg);
+  }
+  .circlebox>.arrow>span::after {
+    display: none;
+  }
+  .circlebox>.arrow>span::before {
+    display: none;
+  }
+ 
+  /* 푸터 */
+  .f-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 30px 0;
+    margin-bottom: 60px;
+  }
+  .f-top>.menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    height: auto;
+  }
+  .f-top>.menu>.quick>h3,
+  .f-top>.menu>.consultation>h3,
+  .f-top>.menu>.social>h3 {
+    width: 200px;
+  }
+  .f-bot {
+    padding: 30px 20px 0;
+  }
+  .f-bot>p {
+    font-size: 11px;
+    word-break: keep-all;
+  }
+}
+
+/* =============================================
+   RESPONSIVE - 480px (모바일)
+   ============================================= */
+@media (max-width: 480px) {
+  /* 헤더 */
+  header {
+    padding: 14px 16px 0;
+    gap: 6px;
+  }
+  #logo>a>img {
+    width: 90px;
+  }
+  .nav>ul>li {
+    padding: 0 8px;
+    font-size: 12px;
+    line-height: 40px;
+  }
+ 
+  /* 메인 */
+  .main {
+    padding: 60px 20px;
+  }
+  .main>.text>p:nth-child(1) {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+  .main>.text>h2 {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  .main>.text>p:nth-child(3) {
+    font-size: 12px;
+  }
+  .main>.text>p:nth-child(3)>span {
+    font-size: 16px;
+  }
+ 
+  /* values / creative / perfect / dream */
+  .values, .creative, .perfect, .dream {
+    padding: 50px 0;
+  }
+  .values>.container>.text,
+  .perfect>.container>.text {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .creative>.container>.text,
+  .dream>.container>.text {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .values>.container>.text>p:nth-child(1),
+  .creative>.container>.text>p:nth-child(1),
+  .perfect>.container>.text>p:nth-child(1),
+  .dream>.container>.text>p:nth-child(1) {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  .values>.container>.text>h1,
+  .creative>.container>.text>h1,
+  .perfect>.container>.text>h1,
+  .dream>.container>.text>h1 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  .values>.container>.text>p:nth-child(3),
+  .creative>.container>.text>p:nth-child(3),
+  .perfect>.container>.text>p:nth-child(3),
+  .dream>.container>.text>p:nth-child(3) {
+    font-size: 13px;
+    line-height: 1.8;
+  }
+ 
+  /* Philosophy */
+  .philosophy {
+    padding: 60px 20px;
+    gap: 40px;
+  }
+  .philosophy>.text>.title {
+    font-size: 15px;
+    margin: 16px 0;
+  }
+  .philosophy>.text>h2 {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .philosophy>.text>p {
+    font-size: 12px;
+  }
+  .circle {
+    width: 220px;
+    height: 220px;
+  }
+  .circle>h3 {
+    font-size: 14px;
+    text-align: center;
+    padding: 0 16px;
+  }
+  .circle>p {
+    font-size: 11px;
+    text-align: center;
+    padding: 0 10px;
+  }
+ 
+  /* 푸터 */
+  .f-top {
+    padding: 40px 20px 0;
+    margin-bottom: 40px;
+    gap: 30px;
+  }
+  .f-top>.menu {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .f-top>.menu>.quick>h3,
+  .f-top>.menu>.consultation>h3,
+  .f-top>.menu>.social>h3 {
+    width: 100%;
+    font-size: 14px;
+  }
+  .f-top>.menu>.quick>ul>li,
+  .f-top>.menu>.consultation>ul>li,
+  .f-top>.menu>.social>ul>li {
+    font-size: 13px;
+  }
+  .f-bot>p {
+    font-size: 10px;
+    padding: 0 16px;
+    word-break: keep-all;
+    line-height: 1.8;
+  }
+  .f-bot ul {
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
+}
